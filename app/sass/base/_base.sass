@@ -1,0 +1,42 @@
+*, 
+*:before, 
+*:after 
+  box-sizing: border-box
+
+html, 
+body 
+  overflow-x: hidden
+
+.clearfix 
+  &:after 
+    content: " "
+    display: table
+    clear: both
+
+.slick-initialized .slick-slide
+  outline: none
+  
+
+body 
+  min-width: 320px
+  font-family: "Arial", sans-serif
+  font-size: 18px
+  line-height: 1.2
+
+.row 
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -15px
+  
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+  +media-lg
+    max-width: 960px
+  +media-md
+    max-width: 720px
+  +media-sm
+    max-width: 430px
+  +media-xs
+    width: auto

@@ -1,0 +1,149 @@
+.header__top
+  background-color: #FAFAFA
+  
+.header__top-row
+  display: flex
+  justify-content: space-between
+
+
+.header__top-left
+  width: 255px
+  align-self: flex-start
+  background-color: $color-main
+
+.header__logo
+  display: block
+  padding: 40px 30px 25px
+  img 
+    width: 100%
+
+.header__top-right
+  width: 1050px
+  margin-left: 33px
+
+.header__top-right-row-1
+  display: flex 
+  justify-content: space-between
+  align-items: center
+  margin: 10px 0
+  margin-bottom: 20px
+
+.header__top-list
+  padding: 0 
+  margin: 0
+  list-style: none
+  display: flex
+  li 
+    margin-right: 15px
+  li:last-child 
+    margin-right: 0
+  a 
+    display: block
+    padding: 3px
+    font-size: 12px 
+  a:hover 
+    text-decoration: underline
+    color: $color-dark
+
+.header__top-phone
+  font-weight: 600
+  color: $color-main
+
+.header__top-right-row-2
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__search
+  position: relative
+  width: 730px
+  background: #FFFFFF
+  border: 1px solid #B0B0B0
+  border-radius: 4px
+  padding: 12px 0px
+  padding-right: 45px
+  padding-left: 15px
+
+.header__search-area
+  width: 100%
+  font-size: 15px
+  outline: none 
+  border: none
+  &::placeholder
+    color: #B0B0B0
+
+
+.header__search-submit 
+  position: absolute
+  top: 0
+  right: 0
+  display: flex
+  justify-content: center 
+  align-items: center
+  height: 100%
+  padding: 0px 14px
+  border-radius: 4px
+  background-color: $color-main
+  color: #fff
+  cursor: pointer
+  input 
+    display: none
+
+.header__menu
+  margin-right: 35px
+  font-size: 14px
+  font-weight: 600
+  &:last-child 
+    margin-right: 0px
+
+// -------------------- header__bottom ------------------------
+
+.header__bottom 
+  padding: 14px 0px
+  background-color: $color-main
+  color: #fff
+
+.header__bottom-row
+  display: flex
+  justify-content: space-between
+  align-items: center 
+  padding-left: 25px
+
+.header__bottom-left
+  display: flex
+  justify-content: space-between
+  align-items: center 
+
+.header__submenu-btn
+  cursor: pointer
+  margin-right: 17px
+
+.header__bottom-list
+  padding: 0 
+  margin: 0 
+  list-style: none
+  display: flex
+  align-items: center 
+  font-size: 14px
+  li 
+    margin-right: 40px
+  li:last-child 
+    margin-right: 0
+  .active 
+    font-size: 16px
+    font-weight: 600
+  a:hover 
+    text-decoration: underline
+
+.header__bottom-right
+  display: flex 
+  align-items: center 
+
+.header__alege
+  font-weight: 600
+  margin-right: 22px
+  text-decoration: underline
+
+.header__language
+  .active 
+    font-weight: 600

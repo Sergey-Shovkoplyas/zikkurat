@@ -1,0 +1,74 @@
+.card
+  position: relative
+  outline: 1px solid black
+  width: 185px
+  height: 390px
+  line-height: 1.36
+
+.card__img
+  width: 185px
+  height: 185px
+  overflow: hidden
+  margin-bottom: 15px
+  a 
+    display: block
+  img 
+    width: 100%
+    transition: .2s
+  &:hover 
+    img 
+      transform: scale(1.03)
+
+.card__title
+  height: 76px
+  overflow: hidden
+  padding: 0 7px
+  margin-bottom: 27px
+  text-align: center 
+  font-size: 14px
+  font-weight: 600
+  color: $color-dark
+  &:hover 
+    text-decoration: underline
+
+.card__price
+  padding: 0 7px 
+  margin-bottom: 15px
+
+.card__price-current
+  font-size: 15px
+  font-weight: 600
+  color: $color-main
+  margin-right: 7px
+
+.card__price-old
+  font-size: 12px
+  text-decoration: line-through
+
+.card__btn
+  padding: 0 15px
+  padding-bottom: 15px
+  .button 
+    font-size: 12px
+    padding: 8px 30px
+
+.card__bage
+  position: absolute
+  top: 10px 
+  left: 0px
+  padding: 7px 11px
+  font-size: 12px 
+  font-weight: 600
+  border-top-right-radius: 5px
+  border-bottom-right-radius: 5px
+  &.super 
+    background: #F1C6CE
+    color: #D70029
+  &.nou 
+    background: #AEE7BA
+    color: #257D39
+  &.stock 
+    background: #FFEBC5
+    color: #F3AC20
+
+

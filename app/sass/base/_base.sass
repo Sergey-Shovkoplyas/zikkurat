@@ -16,22 +16,21 @@ body
 .slick-initialized .slick-slide
   outline: none
   
-
 body 
   min-width: 320px
-  font-family: "Arial", sans-serif
-  font-size: 18px
-  line-height: 1.2
-
-.row 
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -15px
+  font-family: "OpenSans", sans-serif
+  font-size: 16px
+  line-height: 1.3
+  font-weight: 400
+  color: $color-light
+  background-color: #fff
   
 .container
-  max-width: 1200px
+  max-width: 1140px
   margin: 0 auto
   padding: 0 15px
+  &--1370
+    max-width: 1370px
   +media-lg
     max-width: 960px
   +media-md
@@ -40,3 +39,26 @@ body
     max-width: 430px
   +media-xs
     width: auto
+
+a 
+  text-decoration: none
+  color: inherit
+  
+
+h1,h2,h3 
+  margin: 0
+
+h1 
+  font-size: 45px
+  font-weight: 400
+  color: $color-dark
+
+h2
+  font-size: 35px
+  font-weight: 400
+  color: $color-dark
+
+h3
+  font-size: 25px
+  font-weight: 400
+  color: $color-dark

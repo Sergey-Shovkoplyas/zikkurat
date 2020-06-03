@@ -1,0 +1,58 @@
+.sec-slider__title
+  margin-bottom: 30px
+
+.sec-slider__slider
+  position: relative
+
+.sec-slider__arrow
+  position: absolute
+  width: 10px
+  height: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 48%
+  z-index: 1
+  right: 0
+  padding: 5px
+  cursor: pointer
+  color: $color-main
+  font-size: 18px
+  &.prev 
+    left: -20px
+    transform: rotate(180deg)
+  &.next
+    right: -20px
+
+.sec-slider__slider-wrap
+  .card 
+    border-left: 1px solid #E4E4E4
+  .card.slick-current
+    border-left: none
+
+
+/* 
+  .slick-prev,
+  .slick-next
+    position: absolute
+    width: 10px 
+    height: 20px
+    top: 50%
+    background: red
+    border: none 
+    outline: none
+    font-size: 0
+    &::before 
+      position: relative
+      top: 0
+      left: 0
+      content: '\e90f'
+      width: 100%
+      height: 100%
+      font-size: 16px
+
+  .slick-prev
+    left: -30px
+  .slick-next
+    right: -30px
+ */

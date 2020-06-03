@@ -1,4 +1,4 @@
-# Start template
+# zikkurat
 
 Start template with (optional)
 - normalize.css

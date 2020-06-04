@@ -1,5 +1,19 @@
 # zikkurat
 
+Developer: Sergey Shovkoplyas 
+- Skype: shovkoplyassergey_1
+- Telegram: @SergShovk
+- E-mail: shovkoplyassergey@gmail.com
+
+Pages
+- https://sergey-shovkoplyas.github.io/zikkurat/app/index.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/guide.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/guide-list.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/guide-details.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/cart-empty.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/stock.html
+
+
 Start template with (optional)
 - normalize.css
 - bootstrap-grid.min.css

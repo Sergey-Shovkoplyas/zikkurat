@@ -5,6 +5,44 @@
 .stock__newsletter
   margin-bottom: 50px
 
+// --------------- stock__list -----------------------
+
+.stock__list-wrap
+  margin-bottom: 50px
+
+.stock__list-title
+  margin-bottom: 20px
+
+.stock__list
+  padding: 0
+  margin: 0
+  list-style: none 
+  display: flex
+  flex-wrap: wrap
+  margin: -15px
+  li 
+    width: 50%
+    padding: 15px
+  a
+    position: relative
+    display: block
+    padding: 20px
+    border-radius: 4px
+    background-color: #262F56
+    color: #fff
+  a:hover 
+    span 
+      text-decoration: underline
+
+.stock__list-icon
+  margin-right: 15px
+
+.stock__list-arrow
+  position: absolute
+  top: 50%
+  right: 20px
+  transform: translate(0, -50%)
+  font-size: 12px
 
 // ---------------- stock__banner -------------------
 
@@ -30,3 +68,85 @@
 .stock__banner--2
   .stock__banner-col
     width: 50%
+
+// ---------------- stock__products -------------------
+
+.stock__products
+  margin-bottom: 50px
+  &.bottom 
+    margin-bottom: 100px
+
+.stock__products-title
+  margin-bottom: 20px
+
+.stock__products-row
+  display: flex
+  margin: 0 -15px
+
+.stock__products-item
+  width: 33.33%
+  padding: 0 15px
+
+.stock__card
+  position: relative
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+
+.stock__card-img
+  margin-bottom: 20px
+  overflow: hidden
+  a 
+    display: block
+  img 
+    width: 100%
+    transition: .2s
+  &:hover 
+    img 
+      transform: scale(1.03)
+
+.stock__card-content
+  padding: 0 30px
+  padding-bottom: 30px
+
+.stock__card-title
+  font-size: 14px
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 20px 
+  a:hover
+    text-decoration: underline
+
+.stock__card-btn
+  margin-top: 0
+
+.stock__card-text
+  font-size: 11px
+  text-align: center
+  margin-bottom: 20px
+
+.stock__card-price
+  font-size: 15px
+  color: $color-main
+  font-weight: 600
+  margin-bottom: 10px
+  text-align: center
+
+.stock__card-bage
+  position: absolute
+  top: 10px 
+  left: 0px
+  padding: 7px 11px
+  font-size: 12px 
+  font-weight: 600
+  border-top-right-radius: 5px
+  border-bottom-right-radius: 5px
+  &.super 
+    background: #F1C6CE
+    color: #D70029
+  &.nou 
+    background: #AEE7BA
+    color: #257D39
+  &.stock 
+    background: #FFEBC5
+    color: #F3AC20

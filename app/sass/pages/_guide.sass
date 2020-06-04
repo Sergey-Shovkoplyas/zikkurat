@@ -1,0 +1,154 @@
+.guide__top
+  max-width: 1920px 
+  margin: 0 auto
+  padding: 115px 0px 170px
+  background: #EDEDED url('../img/guide-top-bg.jpg') no-repeat center
+
+.guide__top-center
+  max-width: 670px 
+  margin: 0 auto 
+  text-align: center
+
+.guide__top-title
+  margin-bottom: 20px
+
+.guide__top-subtitle
+  font-size: 14px
+
+// --------------- guide__category ------------------------
+
+.guide__category 
+  max-width: 1185px
+  margin: 0 auto
+  margin-top: -50px
+  padding: 35px
+  padding-bottom: 100px
+  border-radius: 4px
+  background-color: #fff
+  
+
+.guide__category-title
+  margin-bottom: 35px
+
+.guide__category-row
+  display: flex
+  margin: 0 -15px
+  flex-wrap: wrap
+
+.guide__category-col
+  width: 25%
+  padding: 15px
+
+.guide__category-item
+  display: block
+  border-radius: 4px
+  &:hover 
+    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.07)
+    .guide__category-item-title
+      color: $color-main
+    img 
+      transform: scale(1.02)
+
+.guide__category-item-img
+  border-radius: 4px
+  overflow: hidden
+  img 
+    width: 100%
+    transition: .2s
+
+.guide__category-item-title
+  padding: 20px
+  text-align: center
+
+
+// --------------- guide__list (next page!!!) ------------------------
+ 
+.guide__list
+  margin-bottom: 50px
+
+.guide__list-title
+  margin: 20px 0px
+
+.guide__list-item
+  display: flex
+  padding: 20px
+  padding-right: 40px
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  margin-bottom: 30px 
+  &:last-child 
+    margin-bottom: 0px
+
+.guide__list-img
+  width: 325px
+  margin-right: 40px 
+  img 
+    width: 100%
+
+.guide__list-content
+  position: relative
+  width: 685px
+
+.guide__list-name
+  margin-bottom: 10px
+
+.guide__list-text
+  margin-bottom: 50px
+
+.guide__list-link
+  position: absolute
+  bottom: 0
+  left: 0
+  color: $color-main
+  text-decoration: underline
+
+.guide__list-pagination
+  margin-bottom: 100px
+
+// --------------- guide__details (next page!!!) ------------------------
+
+.guide__details-title
+  margin: 20px 0px
+  text-align: center
+
+.guide__details-top
+  max-width: 1920px
+  margin: 0 auto
+  height: 600px
+  background: url('../img/guide-details-bg.jpg') no-repeat center 
+  background-size: cover
+
+.guide__details-content
+  max-width: 1230px
+  margin: 0 auto 
+  margin-top: -50px
+  padding: 20px 40px
+  padding-right: 150px
+  padding-bottom: 200px
+  border-radius: 4px
+  background-color: #fff
+  p 
+    line-height: 1.87
+  ul 
+    padding: 0
+    margin: 30px 0px
+    list-style: none 
+    line-height: 1.87
+    li 
+      position: relative
+      padding-left: 20px 
+      margin-bottom: 15px
+      &::before 
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(0, -50%)
+        content: ''
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: $color-main
+
+.guide__details-name
+  margin-bottom: 20px
+

@@ -1,0 +1,41 @@
+.pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+
+.pagination__numbers
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0 50px
+  flex-wrap: wrap
+  a 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 35px
+    height: 35px
+    border-radius: 50%
+    margin: 2px
+  a.active 
+    color: #fff
+    background-color: $color-main
+
+.pagination__control
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  border: 1px solid rgba(0, 0, 0, .1)
+  color: $color-main
+  cursor: pointer
+  &.prev 
+    left: 0
+    transform: rotate(180deg)
+  &.next
+    right: 0

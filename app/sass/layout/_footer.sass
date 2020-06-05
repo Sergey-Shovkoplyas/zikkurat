@@ -1,6 +1,8 @@
 .footer-desc
   background-color: #FAFAFA
-  border: 1px solid rgba(0, 0, 0, 0.1) 
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  +media-sm 
+    display: none 
 
 .footer__top-wrap
   border-bottom: 1px solid rgba(0, 0, 0, 0.1) 
@@ -38,6 +40,8 @@
   i 
     margin-right: 20px
   &.mid 
+    a 
+      display: flex
     a:hover 
       text-decoration: none
       span 
@@ -78,3 +82,42 @@
   margin: 30px 0px
   color: #AEAEAE
   font-size: 12px
+
+
+
+// --------------------- !!!!!!!!!!!!!!!!!!!!!!footer__mob ----------------------
+
+.footer-mob
+  background-color: #ffff
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  padding: 26px 0px 19px
+  +media-min-768
+    display: none
+
+.footer-mob__logo
+  width: 83px
+  margin: 0 auto
+  margin-bottom: 26px
+  img 
+    width: 100%
+
+.footer-mob__list
+  padding: 0
+  margin: 0
+  list-style: none 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 31px
+  li 
+    margin-bottom: 15px
+  li:last-child
+    margin: 0 auto
+  a 
+    font-size: 14px
+
+.footer-mob__copy
+  text-align: center
+  font-size: 12px
+  line-height: 25px
+  color: #AEAEAE

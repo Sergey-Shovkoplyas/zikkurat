@@ -5,6 +5,12 @@
   border: 1px solid #E4E4E4
   box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1)
   border-radius: 4px
+  +media-md 
+    padding: 40px
+    padding-left: 30px
+    padding-right: 130px
+  +media-sm 
+    padding: 20px
 
 
 .newsletter__title
@@ -15,6 +21,8 @@
 
 .newsletter__form
   display: flex
+  +media-sm 
+    flex-wrap: wrap
 
 .newsletter__item
   width: 230px
@@ -22,6 +30,14 @@
   &:last-child 
     margin-right: 0px
     width: 210px
+  +media-md 
+    margin-right: 15px
+  +media-sm 
+    width: 100%
+    margin-right: 0
+    margin-bottom: 15px
+    &:last-child
+      margin: 0 auto
 
 .newsletter__img
   position: absolute
@@ -30,3 +46,9 @@
   right: -70px
   img 
     width: 100%
+  +media-md 
+    width: 140px
+    top: 45px
+    right: -35px
+  +media-sm 
+    display: none

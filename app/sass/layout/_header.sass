@@ -1,3 +1,7 @@
+.header-desc 
+  +media-sm 
+    display: none
+  
 .header__top
   background-color: #FAFAFA
   
@@ -7,10 +11,14 @@
 
 
 .header__top-left
+  flex-shrink: 0
   width: 255px
   margin-left: -15px
   align-self: flex-start
   background-color: $color-main
+  +media-md 
+    width: 190px
+    margin-left: -40px
 
 .header__logo
   display: block
@@ -21,6 +29,8 @@
 .header__top-right
   width: 1050px
   margin-left: 33px
+  +media-md 
+    margin-left: 20px
 
 .header__top-right-row-1
   display: flex 
@@ -28,6 +38,8 @@
   align-items: center
   margin: 10px 0
   margin-bottom: 20px
+  +media-md 
+    margin-bottom: 10px
 
 .header__top-list
   padding: 0 
@@ -45,6 +57,9 @@
   a:hover 
     text-decoration: underline
     color: $color-dark
+  +media-md 
+    li 
+      margin-right: 8px
 
 .header__top-phone
   font-weight: 600
@@ -57,13 +72,20 @@
 
 .header__search
   position: relative
-  width: 730px
+  width: 100%
   background: #FFFFFF
   border: 1px solid #B0B0B0
   border-radius: 4px
   padding: 12px 0px
   padding-right: 45px
   padding-left: 15px
+  margin-right: 55px
+  +media-lg
+    margin-right: 30px
+  +media-md 
+    padding: 10px 0px
+    padding-left: 15px
+    margin-right: 10px
 
 .header__search-area
   width: 100%
@@ -90,12 +112,49 @@
   input 
     display: none
 
+.header__menu-row
+  display: flex
+  justify-content: space-between
+  width: 265px
+  flex-shrink: 0
+  +media-md 
+    justify-content: flex-end
+
 .header__menu
-  margin-right: 35px
+  position: relative
   font-size: 14px
   font-weight: 600
   &:last-child 
     margin-right: 0px
+  +media-lg
+    margin-right: 20px
+
+.header__menu-btn
+  cursor: pointer
+  span 
+    margin: 0 4px
+  &:hover 
+    color: $color-main
+
+.header__menu-sublist
+  display: none
+  position: absolute
+  z-index: 1
+  width: 100%
+  top: 100%
+  left: 0
+  padding: 5px
+  margin: 0
+  margin-top: 5px
+  padding-left: 25px
+  list-style: none
+  background-color: #FAFAFA
+  border-radius: 4px
+  li 
+    margin-bottom: 3px
+  a:hover 
+    text-decoration: underline
+    color: $color-dark
 
 // -------------------- header__bottom ------------------------
 
@@ -105,10 +164,13 @@
   color: #fff
 
 .header__bottom-row
+  position: relative
   display: flex
   justify-content: space-between
   align-items: center 
-  padding-left: 25px
+  padding-left: 15px
+  +media-md 
+    padding-left: 0px
 
 .header__bottom-left
   display: flex
@@ -117,7 +179,15 @@
 
 .header__submenu-btn
   cursor: pointer
-  margin-right: 17px
+  i
+    margin-right: 17px
+  span
+    font-size: 16px
+    font-weight: 600
+    margin-right: 40px
+  &:hover 
+    span 
+      text-decoration: underline
 
 .header__bottom-list
   padding: 0 
@@ -130,11 +200,11 @@
     margin-right: 40px
   li:last-child 
     margin-right: 0
-  .active 
-    font-size: 16px
-    font-weight: 600
   a:hover 
     text-decoration: underline
+  +media-md 
+    li
+      margin-right: 20px
 
 .header__bottom-right
   display: flex 
@@ -143,8 +213,267 @@
 .header__alege
   font-weight: 600
   margin-right: 22px
-  text-decoration: underline
+  &:hover 
+    text-decoration: underline
 
 .header__language
   .active 
     font-weight: 600
+  a:not(.active):hover 
+    text-decoration: underline
+
+
+// ------------------- header__submenu --------------------------
+
+
+.header__submenu
+  display: none
+  width: 1200px
+  min-height: 615px
+  position: absolute
+  z-index: 10
+  top: 34px
+  left: -15px
+  background-color: #fff
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2)
+  +media-lg 
+    width: 960px
+  +media-md
+    width: 770px 
+    left: -40px
+  &.active 
+    display: flex
+
+.header__submenu-list
+  padding: 0
+  margin: 0
+  list-style: none
+  width: 255px
+  flex-shrink: 0
+  background-color: $color-main
+  a 
+    display: block
+    padding: 9px 15px
+    color: #fff
+    line-height: 1.38
+  li.active,
+  li:hover 
+    a
+      background-color: #EA0B35
+  +media-lg 
+    width: 200px
+  +media-md
+    width: 190px
+
+
+
+.header__submenu-content
+  display: none
+  width: 100%
+  color: #B0B0B0
+  position: relative
+  &.active 
+    display: flex
+
+.header__submenu-content-left
+  width: 100%
+  padding: 30px 60px
+  padding-right: 170px
+  border-right: 1px solid #D0D0D0
+  +media-lg 
+    padding: 30px
+  +media-md
+    padding: 20px
+
+.header__submenu-category-row
+  display: flex
+  justify-content: space-between
+  &:first-child 
+    margin-bottom: 80px
+
+.header__submenu-category
+  width: 160px
+  +media-md 
+    width: 150px
+
+.header__submenu-category-title
+  color: $color-dark
+  margin-bottom: 15px
+
+.header__submenu-category-list
+  padding: 0
+  margin: 0
+  list-style: none
+  font-size: 14px
+  li
+    margin-bottom: 10px
+  a:hover 
+    text-decoration: underline
+    color: $color-dark
+
+
+
+.header__submenu-content-right
+  width: 285px 
+  flex-shrink: 0
+  padding: 35px
+  +media-md 
+    width: 210px 
+    padding: 20px
+  
+.header__submenu-popular-title
+  text-align: center
+  font-size: 30px
+  margin-bottom: 25px
+  color: $color-dark
+
+.header__submenu-popular-subtitle
+  font-size: 15px
+  text-align: center 
+  margin-bottom: 60px
+
+.header__submenu-popular-img
+  margin: 0 -35px
+  margin-bottom: 30px
+  img 
+    width: 100%
+
+.header__submenu-popular-btn
+  width: 160px
+  margin: 0 auto
+  +media-md 
+    width: 100%
+
+
+// ---------- !!!!!!!!!!!!!!!!!!! header-mob !!!!!!!!!!!!!! --------------------------
+
+
+.header-mob
+  position: fixed
+  z-index: 100
+  top: 0
+  width: 100%
+  display: block
+  padding: 10px 0px
+  background-color: $color-main
+  color: #fff
+  +media-min-768
+    display: none
+
+.header-mob__wrap
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.header-mob__logo
+  display: flex
+  align-items: center 
+  justify-content: center
+  width: 80px
+  img 
+    width: 100%
+
+.header-mob__item
+  text-align: center
+  width: 30px
+
+.header-mob__item-text
+  font-size: 11px 
+  line-height: 15px
+
+
+// ----------------- header-mob__menu ---------------------
+
+.header-mob__menu-wrap
+  position: absolute
+  top: 0
+  z-index: 1
+
+.header-mob__overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0.4)
+
+.header-mob__menu
+  position: absolute
+  z-index: 300
+  top: 0
+  left: 0
+  width: 280px
+  height: 100vh
+  background-color: #fff
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07)
+  color: #4E4E4E
+  transform: translateX(-280px)
+  transition: .2s
+  &.active 
+    transform: translateX(0px)
+
+.header-mob__menu-top 
+  display: flex
+  align-items: center
+  height: 55px
+  background-color: $color-main
+  font-size: 12px
+  color: #fff
+
+.header-mob__menu-btn 
+  display: block
+  padding: 15px
+
+.header-mob__title
+  padding: 16px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  background-color: #FAFAFA
+  font-size: 12px
+  font-weight: 600
+  color: $color-dark
+
+.header-mob__list
+  padding: 0 
+  margin: 0
+  list-style: none
+  li 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  a 
+    position: relative
+    display: flex
+    align-items: center
+    padding: 15px
+    font-size: 14px
+  span 
+    margin-left: 15px
+  i.icon-arrow-vert 
+    position: absolute
+    top: 50%
+    right: 20px
+    transform: translate(0, -50%)
+    font-size: 11px
+  i:first-child 
+    font-size: 20px
+  i.yellow
+    color: #F3AC20
+  i.red
+    color: #D70029
+  i.green
+    color: #3E8158
+  i.blue
+    color: #5481C3
+  i.purple
+    color: #8638E9
+
+// -------------------- header-mob__search ---------------------
+
+.header-mob__search
+  display: none
+  position: absolute
+  width: 100%
+  top: 55px
+  padding: 15px 15px
+  background-color: $color-main
+  &.active 
+    display: block

@@ -1,31 +1,50 @@
 .home__slider-1
   margin-bottom: 50px
+  +media-sm 
+    margin-bottom: 30px
 
 .home__slider-2
-  margin-bottom: 25px
+  margin-bottom: 30px
 
 .home__slider-3
   margin-bottom: 62px
+  +media-sm 
+    margin-bottom: 30px
 
 // ------------- home__head ------------------
   
 .home__head
   padding: 105px 0px 95px 
   background: url('../img/home-head-bg.jpg') no-repeat center 
-  font-size: cover
+  background-size: cover
+  +media-sm 
+    padding: 46px 0px 35px
+    background: url('../img/home-mobile-bg.jpg') no-repeat center 
 
 .home__head-wrap
   max-width: 510px
+  +media-sm 
+    max-width: 220px
 
 .home__head-title
   margin-bottom: 15px
+  font-size: 45px
+  +media-sm 
+    font-size: 20px
+    margin-bottom: 30px
 
 .home__head-subtitle
   font-size: 20px
   margin-bottom: 25px
+  +media-sm 
+    display: none
 
 .home__head-btn
   width: 180px
+  +media-sm 
+    width: 100px
+    .button 
+      padding: 8px 8px
 
 // ------------- home__category ------------------
 
@@ -39,6 +58,10 @@
   justify-content: center
   padding-bottom: 12px
   border-bottom: 1px solid #E4E4E4
+  +media-sm 
+    justify-content: space-between
+    padding: 0 15px
+    padding-bottom: 10px
 
 .home__category-item
   font-size: 14px
@@ -48,15 +71,21 @@
     margin-right: 0px
   &:hover 
     text-decoration: underline
+  +media-sm
+    margin-right: 0
 
 // ------------- home__features ------------------
 
 .home__features
   margin-bottom: 50px
+  +media-sm 
+    margin-bottom: 30px
 
 .home__features-row 
   display: flex
   justify-content: space-between
+  +media-sm 
+    flex-direction: column
 
 .home__features-col
   position: relative
@@ -88,11 +117,41 @@
       width: 169px
       height: 130px
       background: url('../img/home-features-2.png') no-repeat center
+  +media-md
+    padding: 30px 
+    &.left,
+    &.right
+      &::before
+        background-size: 100px
+    &.left
+      padding-left: 60px
+      &::before 
+        left: -85px
+    &.right
+      padding-right: 60px
+  +media-sm 
+    width: 100%
+    margin-bottom: 15px
+    &.left,
+    &.right
+      padding: 20px
+      padding-right: 80px
+      text-align: left
+      &::before
+        background-size: 80px
+    &.left
+      &::before 
+        left: auto 
+        right: -60px
 
 .home__features-title
   font-size: 35px
   color: $color-dark
   margin-bottom: 10px 
+  +media-lg
+    font-size: 25px
+  +media-sm 
+    font-size: 20px
 
 .home__features-text
   font-size: 14px
@@ -106,6 +165,8 @@
   display: flex
   padding-bottom: 50px
   border-bottom: 1px solid #E4E4E4
+  +media-sm 
+    padding-bottom: 30px
 
 .home__decor-col
   margin-right: 30px
@@ -129,42 +190,75 @@
   &.narrow--3
     background: url('../img/home-decor-3.jpg') no-repeat center
     background-size: cover
+  +media-md
+    height: 300px
+  +media-sm 
+    height: 250px
+    margin-right: 0
+    &.narrow
+      display: none
 
 .home__decor-text
   text-transform: uppercase
   font-size: 14px
   color: #fff
+  +media-sm 
+    font-size: 12px
 
 .home__decor-title
   font-size: 35px
   color: #fff
+  +media-sm 
+    font-size: 25px
 
 .home__decor-btn
   position: absolute
   bottom: 25px
   left: 25px
   width: 210px
+  +media-sm 
+    width: 180px
 
 // ------------- home__banner ------------------
 
 .home__banner 
   margin-bottom: 50px
+  +media-sm 
+    margin-bottom: 30px
 
 .home__banner-row
   display: flex
   margin: 0 -15px
+  +media-md 
+    flex-wrap: wrap
+    justify-content: center
 
 .home__banner-col
   width: 33.33%
   height: 350px
   padding: 0 15px
+  +media-md 
+    width: 50%
+    height: 300px
+    margin-bottom: 30px
+    &:last-child 
+      margin-bottom: 0px
+  +media-sm 
+    width: 100%
+    height: 250px
+    margin-bottom: 15px
 
 .home__banner--2
   .home__banner-col
     width: 50%
+  +media-sm 
+    .home__banner-col
+      width: 100%
 
   
 // ------------- home__newsletter ------------------
 
 .home__newsletter
   margin-bottom: 125px
+  +media-sm 
+    margin-bottom: 50px

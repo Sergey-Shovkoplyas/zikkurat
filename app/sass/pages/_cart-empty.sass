@@ -1,20 +1,33 @@
 .cart-empty__top
   background-color: #FAFAFA
   padding-bottom: 30px
+  +media-sm 
+    padding-bottom: 0px
 
 .cart-empty__center
   max-width: 376px
   padding: 105px 0px 
   margin: 0 auto
   background: url('../img/cart-empty-bg.png') no-repeat center
+  +media-sm 
+    padding: 50px 0px
+    background-size: contain
 
 .cart-empty__title
   text-align: center
   margin-bottom: 20px
+  font-size: 35px
+  +media-sm 
+    font-size: 30px
+    margin-bottom: 15px
 
 .cart-empty__subtitle 
   color: #B0B0B0
   margin-bottom: 30px
+  text-align: center
+  +media-sm 
+    margin-bottom: 15px
+  
 
 .cart-empty__btn
   width: 205px
@@ -24,21 +37,31 @@
 
 .cart-empty__bottom
   padding: 50px 0px 100px
+  +media-sm 
+    padding: 30px 0px 50px
 
 .cart-empty__bottom-title
   font-weight: 600
   color: $color-dark
   margin-bottom: 30px
+  font-size: 16px
+  +media-sm 
+    margin-bottom: 10px
 
 .cart-empty__row
   display: flex
   justify-content: space-between
+  +media-sm
+    flex-direction: column
 
 .cart-empty__item
   margin-right: 30px
   text-align: center
   &:last-child 
     margin-right: 0
+  +media-sm
+    margin-right: 0
+    margin-bottom: 15px
 
 .cart-empty__item-img
   display: flex
@@ -46,11 +69,16 @@
   align-items: center
   height: 140px
   margin-bottom: 30px
+  +media-sm 
+    margin-bottom: 10px
 
 .cart-empty__item-title
   font-weight: 600
   color: $color-dark
   margin-bottom: 20px
+  font-size: 16px
+  +media-sm 
+    margin-bottom: 10px
 
 .cart-empty__item-text
   font-size: 14px

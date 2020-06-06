@@ -3,6 +3,10 @@
   margin: 0 auto
   padding: 115px 0px 170px
   background: #EDEDED url('../img/guide-top-bg.jpg') no-repeat center
+  +media-md 
+    background-position: -540px center
+  +media-sm 
+    padding: 40px 0px 60px
 
 .guide__top-center
   max-width: 670px 
@@ -11,9 +15,16 @@
 
 .guide__top-title
   margin-bottom: 20px
+  font-size: 45px
+  +media-sm 
+    margin-bottom: 10px
+    font-size: 35px
 
 .guide__top-subtitle
   font-size: 14px
+  +media-md 
+    text-shadow: 0px 0px 0.5px #fff
+  
 
 // --------------- guide__category ------------------------
 
@@ -25,19 +36,34 @@
   padding-bottom: 100px
   border-radius: 4px
   background-color: #fff
+  +media-sm 
+    padding: 15px
+    padding-top: 40px
+    padding-bottom: 50px
+    margin-top: 0px
   
 
 .guide__category-title
   margin-bottom: 35px
+  font-size: 25px
+  +media-sm
+    margin-bottom: 20px
 
 .guide__category-row
   display: flex
   margin: 0 -15px
   flex-wrap: wrap
+  +media-sm
+    flex-wrap: wrap
+    margin: 0 -7px
 
 .guide__category-col
   width: 25%
   padding: 15px
+  +media-md 
+    padding: 7px
+  +media-sm
+    width: 100%
 
 .guide__category-item
   display: block
@@ -59,6 +85,8 @@
 .guide__category-item-title
   padding: 20px
   text-align: center
+  +media-sm 
+    padding: 10px
 
 
 // --------------- guide__list (next page!!!) ------------------------
@@ -68,6 +96,7 @@
 
 .guide__list-title
   margin: 20px 0px
+  font-size: 25px
 
 .guide__list-item
   display: flex
@@ -78,22 +107,42 @@
   margin-bottom: 30px 
   &:last-child 
     margin-bottom: 0px
+  +media-md 
+    padding: 20px
+  +media-sm 
+    padding: 15px
+    flex-direction: column
 
 .guide__list-img
   width: 325px
   margin-right: 40px 
   img 
     width: 100%
+  +media-md 
+    width: 430px 
+    margin-right: 20px
+  +media-sm 
+    width: 100%
+    margin-bottom: 15px
 
 .guide__list-content
   position: relative
   width: 685px
+  +media-sm 
+    width: 100%
+    text-align: justify
 
 .guide__list-name
   margin-bottom: 10px
+  font-size: 25px
+  +media-sm 
+    font-size: 20px
 
 .guide__list-text
   margin-bottom: 50px
+  +media-sm
+    margin-bottom: 40px
+    font-size: 15px
 
 .guide__list-link
   position: absolute
@@ -104,12 +153,15 @@
 
 .guide__list-pagination
   margin-bottom: 100px
+  +media-sm 
+    margin-bottom: 50px
 
 // --------------- guide__details (next page!!!) ------------------------
 
 .guide__details-title
   margin: 20px 0px
   text-align: center
+  font-size: 25px
 
 .guide__details-top
   max-width: 1920px
@@ -117,6 +169,10 @@
   height: 600px
   background: url('../img/guide-details-bg.jpg') no-repeat center 
   background-size: cover
+  +media-md 
+    height: 500px
+  +media-sm
+    height: 250px
 
 .guide__details-content
   max-width: 1230px
@@ -148,7 +204,25 @@
         height: 10px
         border-radius: 50%
         background-color: $color-main
+  +media-lg 
+    padding: 20px 40px
+    margin-left: 30px
+    margin-right: 30px
+  +media-sm 
+    margin: 0px 0px 30px
+    padding: 15px
+    text-align: justify
+    font-size: 15px
 
 .guide__details-name
   margin-bottom: 20px
+  font-size: 25px
+  text-align: center
+  +media-sm 
+    font-size: 20px
+
+.guide__details-subtitle
+  font-size: 16px 
+  font-weight: 700
+  margin-bottom: -10px
 

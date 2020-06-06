@@ -1,6 +1,9 @@
 .stock__title
   text-align: center
   margin: 22px 0px 32px
+  font-size: 35px
+  +media-sm 
+    font-size: 30px
 
 .stock__newsletter
   margin-bottom: 50px
@@ -12,6 +15,7 @@
 
 .stock__list-title
   margin-bottom: 20px
+  font-size: 25px
 
 .stock__list
   padding: 0
@@ -33,6 +37,14 @@
   a:hover 
     span 
       text-decoration: underline
+  +media-sm 
+    flex-wrap: wrap
+    margin: -7px
+    li 
+      width: 100%
+      padding: 7px
+    a 
+      padding: 16px
 
 .stock__list-icon
   margin-right: 15px
@@ -48,18 +60,27 @@
 
 .stock__banner-title
   margin-bottom: 20px
+  font-size: 25px
 
 .stock__banner
   margin-bottom: 50px
+  +media-sm 
+    margin-bottom: 30px
 
 .stock__banner-row
   display: flex
   margin: 0 -15px
+  +media-sm 
+    flex-wrap: wrap
 
 .stock__banner-col
   width: 33.33%
   height: 350px
   padding: 0 15px
+  +media-md
+    height: 300px
+  +media-sm
+    height: 250px
 
 .stock__banner--1
   .stock__banner-col
@@ -68,6 +89,12 @@
 .stock__banner--2
   .stock__banner-col
     width: 50%
+  +media-sm 
+    .stock__banner-col
+      width: 100%
+      margin-bottom: 15px
+      &:last-child 
+        margin-bottom: 0px
 
 // ---------------- stock__products -------------------
 
@@ -75,17 +102,31 @@
   margin-bottom: 50px
   &.bottom 
     margin-bottom: 100px
+  +media-sm 
+    margin-bottom: 30px
+    &.bottom 
+      margin-bottom: 50px
+
 
 .stock__products-title
   margin-bottom: 20px
+  font-size: 25px
 
 .stock__products-row
   display: flex
   margin: 0 -15px
+  +media-sm 
+    flex-wrap: wrap
+    margin: 0 -7px
 
 .stock__products-item
   width: 33.33%
   padding: 0 15px
+  +media-md 
+    padding: 0 7px
+  +media-sm 
+    width: 100%
+    margin-bottom: 10px
 
 .stock__card
   position: relative
@@ -104,6 +145,11 @@
   &:hover 
     img 
       transform: scale(1.03)
+  +media-sm 
+    img 
+      width: 70%
+    a 
+      text-align: center
 
 .stock__card-content
   padding: 0 30px

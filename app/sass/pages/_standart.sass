@@ -1,0 +1,181 @@
+.standart
+  .guide__list-item
+    padding: 20px
+  .guide__list-img
+    width: 300px
+    margin-right: 30px 
+  .guide__list-content
+    width: 455px
+  .guide__list-name
+    margin-bottom: 16px
+    font-size: 16px
+    font-weight: 600
+  .guide__list-text
+    font-size: 14px
+    margin-bottom: 30px
+  .guide__list-date
+    position: absolute
+    bottom: 0
+    right: 0
+    font-size: 14px 
+    font-weight: 600
+    color: #B0B0B0
+  .guide__list-link
+    font-size: 14px
+  +media-sm 
+    .guide__list-img
+      width: 100%
+      margin-right: 0px 
+    .guide__list-content
+      width: 100%
+
+  
+.standart__title
+  margin: 20px 0px
+  font-size: 25px
+
+.standart__row
+  // outline: 1px solid green
+  display: flex
+  justify-content: space-between
+  +media-sm 
+    flex-direction: column
+
+.standart__left
+  // outline: 1px solid red
+  width: 160px
+  flex-shrink: 0
+  margin-right: 20px
+  +media-sm 
+    width: 100%
+
+.standart__right
+  // outline: 1px solid red
+  width: 825px
+  margin-top: 70px
+  +media-lg 
+    width: 740px
+  +media-md
+    width: 500px
+  +media-sm
+    margin-top: 0
+    width: 100%
+
+.standart__sort
+  display: flex
+  flex-direction: column 
+  +media-sm 
+    flex-direction: row
+
+.standart__sort-item
+  margin-bottom: 50px
+  color: $color-dark
+  +media-sm 
+    margin-right: 50px
+
+.standart__sort-title
+  font-size: 16px
+  font-weight: 600
+  margin-bottom: 20px
+
+.standart__sort-list
+  padding: 0
+  margin: 0
+  list-style: none
+  li 
+    margin-bottom: 14px 
+  li:last-child 
+    margin-bottom: 0px 
+  a 
+    font-size: 14px
+    padding: 3px 0px
+    font-weight: 600
+  a:hover 
+    text-decoration: underline
+  li.active a 
+    color: $color-main 
+    text-decoration: underline
+
+// ----------------- standart-1.html ------------------------
+
+.standart__content
+  p 
+    line-height: 1.875
+    margin-bottom: 35px
+  ul 
+    padding: 0
+    margin: 30px 0px
+    list-style: none 
+    line-height: 1.87
+    li 
+      position: relative
+      padding-left: 20px 
+      margin-bottom: 15px
+      &::before 
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(0, -50%)
+        content: ''
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: $color-main
+  +media-sm 
+    p 
+      text-align: justify
+
+.standart__subtitle
+  font-size: 25px
+  margin-bottom: 20px
+  +media-sm 
+    font-size: 20px
+.standart__subtitle--centered
+  text-align: center
+
+.standart__content-img
+  width: 100%
+
+
+.standart__content-title
+  font-size: 16px 
+  font-weight: 600
+
+.standart__gallery
+  display: flex
+  flex-wrap: wrap
+  margin: -15px 
+  +media-md 
+    margin: -7px
+
+.standart__gallery-img
+  width: 33.33%
+  padding: 15px 
+  cursor: pointer
+  transition: .2s
+  img 
+    width: 100%
+  &:hover 
+    transform: scale(1.05)
+  +media-md 
+    padding: 7px
+  +media-sm 
+    width: 50%
+
+.standart__content-link
+  font-weight: 600
+  color: $color-dark
+  text-decoration: underline
+
+// ---------------- custom fancybox ----------------
+
+
+// .standart__gallery
+//   .fancybox-navigation .fancybox-button--arrow_left,
+//   .fancybox-navigation .fancybox-button--arrow_right
+
+
+
+
+
+

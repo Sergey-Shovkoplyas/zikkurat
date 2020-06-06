@@ -12,6 +12,9 @@ Pages
 - https://sergey-shovkoplyas.github.io/zikkurat/app/guide-details.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/cart-empty.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/stock.html
+- 
+- https://sergey-shovkoplyas.github.io/zikkurat/app/standart.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/standart-1.html
 
 
 Start template with (optional)

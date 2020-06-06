@@ -1,0 +1,30 @@
+.support__title
+  margin: 20px 0px
+  font-size: 25px
+
+.support__row
+  outline: 1px solid green
+  display: flex
+  justify-content: space-between
+  +media-sm 
+    flex-direction: column
+
+.support__left
+  outline: 1px solid red
+  width: 160px
+  flex-shrink: 0
+  margin-right: 20px
+  +media-sm 
+    width: 100%
+
+.support__right
+  outline: 1px solid red
+  width: 825px
+  margin-top: 70px
+  +media-lg 
+    width: 740px
+  +media-md
+    width: 500px
+  +media-sm
+    margin-top: 0
+    width: 100%

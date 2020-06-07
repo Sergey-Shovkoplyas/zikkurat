@@ -15,6 +15,8 @@ Pages
 - 
 - https://sergey-shovkoplyas.github.io/zikkurat/app/standart.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/standart-1.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/support-contacte.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/support-furmizori.html
 
 
 Start template with (optional)

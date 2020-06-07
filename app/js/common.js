@@ -135,4 +135,18 @@ $(document).ready(function () {
 	});
 
 
+
+
+
+	// ------------------------------ select customaze  -------------------
+
+	$('select.form__select').styler();
+	$('.jq-selectbox__select').on('click', function () {
+		$(this).toggleClass('active');
+	});
+	$('.jq-selectbox__dropdown').on('click', function () {
+		$(this).prev('.jq-selectbox__select').toggleClass('active');
+	});
+
+
 });

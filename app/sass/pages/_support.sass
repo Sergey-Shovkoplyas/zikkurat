@@ -1,30 +1,213 @@
-.support__title
-  margin: 20px 0px
-  font-size: 25px
-
 .support__row
-  outline: 1px solid green
+  // outline: 1px solid green
   display: flex
   justify-content: space-between
-  +media-sm 
+  +media-md
     flex-direction: column
 
 .support__left
-  outline: 1px solid red
-  width: 160px
+  // outline: 1px solid red
+  width: 260px
   flex-shrink: 0
   margin-right: 20px
   +media-sm 
     width: 100%
 
-.support__right
-  outline: 1px solid red
-  width: 825px
-  margin-top: 70px
-  +media-lg 
-    width: 740px
-  +media-md
-    width: 500px
-  +media-sm
+.support__right--contacte
+  margin: 70px 0px 124px
+  +media-md 
     margin-top: 0
+  +media-sm
+    margin-bottom: 50px
+
+.support__right
+  // outline: 1px solid red
+  width: 825px
+  +media-lg 
+    width: 650px
+  +media-md
     width: 100%
+  +media-sm
+    width: 100%
+
+.support__title
+  margin: 20px 0px
+  font-size: 25px
+
+.support__tab-list
+  display: flex
+  flex-direction: column
+  +media-md 
+    flex-direction: row
+  
+.support__tab
+  font-size: 14px
+  font-weight: 600
+  margin-bottom: 30px
+  &.active 
+    color: $color-main
+    text-decoration: underline
+  &:hover 
+    text-decoration: underline
+  +media-md 
+    margin-right: 30px
+
+
+// ------------------ forms --------------------------
+
+.support__form-wrap
+  padding: 30px
+  background-color: #FAFAFA
+  border-radius: 4px
+  +media-sm 
+    padding: 15px
+
+.support__form
+  padding: 40px 30px 30px
+  background-color: #fff
+  +media-sm 
+    padding: 25px 15px 15px
+
+.support__form-title
+  font-size: 14px
+  font-weight: 600
+  color: #000
+  margin-bottom: 25px
+
+
+// ------------------- support__contacte ------------------------
+
+.support__contacte-row
+  display: flex
+  margin: -12px
+  flex-wrap: wrap
+  margin-bottom: 12px
+  +media-sm 
+    margin: -7px
+    margin-bottom: 7px
+
+  
+.support__contacte-item
+  display: block
+  width: 50% 
+  padding: 12px
+  +media-sm 
+    padding: 7px
+    width: 100%
+
+.support__contacte-textarea
+  display: block
+  width: 100%
+  margin-bottom: 25px
+  textarea 
+    height: 100px
+
+.support__contacte-bottom
+  display: flex
+  +media-sm 
+    flex-direction: column
+
+.support__contacte-left
+  width: 340px
+  margin-right: 25px
+  +media-sm
+    width: 100% 
+    margin-right: 0
+    margin-bottom: 25px
+
+.support__contacte-right
+  align-self: flex-end
+  width: 200px
+  +media-sm 
+    margin: 0 auto
+
+// ------------------- support__furmizori ------------------------
+
+.support__firmizori-top
+  padding: 50px 56px
+  margin: 20px 0px
+  background: #FAFAFA url('../img/support-bg.png') no-repeat right center
+  +media-lg 
+    padding: 50px 30px
+    background-position: right -20px center
+  +media-sm 
+    margin-top: 0
+    padding: 30px 15px
+    background: #FAFAFA
+
+
+.support__firmizori-title
+  font-size: 25px
+  margin-bottom: 20px
+  +media-sm 
+    font-size: 20px
+    margin-bottom: 10px
+
+.support__firmizori-subtitle
+  max-width: 340px
+  +media-lg
+    max-width: 290px
+
+
+.support__firmizori-form-row
+  display: flex
+  flex-wrap: wrap 
+  margin: 0 -12px
+
+
+.support__firmizori-form-col
+  width: 50%
+  padding: 0 
+  padding: 0 12px
+  label 
+    display: block
+    margin-bottom: 24px
+  label:last-child 
+    margin-bottom: 0px
+  +media-sm 
+    width: 100%
+    label 
+      margin-bottom: 12px
+
+.support__firmizori-checkbox-row
+  display: flex
+  margin-bottom: 30px
+  +media-sm 
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+.support__firmizori-checkbox-col
+  width: 50%
+  .form__checkbox-item
+    margin-bottom: 20px
+  +media-sm 
+    width: 100%
+    .form__checkbox-item
+      margin-bottom: 14px
+
+.support__firmizori-textarea
+  textarea 
+    height: 100px
+
+.support__firmizori-agree
+  margin: 20px 0px 48px
+  label 
+    font-size: 12px
+    color: #B0B0B0
+  label::before
+    font-size: 14px
+  +media-sm 
+    margin: 20px 0px 30px
+
+.support__firmizori-form
+  margin-bottom: 80px
+  +media-sm 
+    margin-bottom: 50px
+
+.support__firmizori-form-btn
+  width: 200px
+  margin-left: auto
+  margin-top: 30px
+  +media-sm 
+    margin-right: auto
+

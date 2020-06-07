@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Zikkurat support-1</title>
+	<title>Zikkurat support-furmizori</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,7 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -395,14 +396,137 @@
 					<h1 class="support__title">Serviciul suport clienti</h1>
 
 					<div class="support__tab-list">
-						<div class="support__tab active">Contacte</div>
-						<div class="support__tab">Contacte</div>
+						<a href="support-contacte.html" class="support__tab">Contacte</a>
+						<a class="support__tab active">Furmizori</a>
 					</div>
 				
 				</div>
 				<div class="support__right">
 
-					support__right
+					<div class="support__firmizori-top">
+						<h2 class="support__firmizori-title">Formular aplicare furnizor</h2>
+						<div class="support__firmizori-subtitle">Doriti sa colaborati cu compania Zikkurat si nu stiti de unde sa incepeti?</div>
+					</div>
+					<form action="#" class="support__firmizori-form">
+						<div class="support__form-wrap">
+	
+							<div class="support__firmizori-form-row">
+								<div class="support__firmizori-form-col">
+									<div action="#" class="support__form">
+										<div class="support__form-title">Date de identificare</div>
+										<label>
+											<div class="form__item-title">Nume Prenume<span>*</span></div>
+											<input type="text" required>
+										</label>
+										<label>
+											<div class="form__item-title">Cod fiscal<span>*</span></div>
+											<input type="text" required>
+										</label>
+										<label>
+											<div class="form__item-title">Tara<span>*</span></div>
+											<input type="text" required>
+										</label>
+										<label>
+											<div class="form__item-title">Adresa<span>*</span></div>
+											<input type="text" required>
+										</label>
+									</div>
+								</div>
+								<div class="support__firmizori-form-col">
+									<div action="#" class="support__form">
+										<div class="support__form-title">Persoana de contact</div>
+										<label>
+											<div class="form__item-title">Nume si prenume<span>*</span></div>
+											<input type="text" required>
+										</label>
+										<label>
+											<div class="form__item-title">Functie<span>*</span></div>
+											<input type="text" required>
+										</label>
+										<label>
+											<div class="form__item-title">Telefon<span>*</span></div>
+											<input type="text" required>
+										</label>
+										<label>
+											<div class="form__item-title">E-mail<span>*</span></div>
+											<input type="text" required>
+										</label>
+									</div>
+								</div>
+							</div>
+	
+						</div>
+	
+						<div class="support__firmizori-agree">
+							<div class="form__checkbox-item">
+								<input id="checkbox-firmizori-11" type="checkbox">
+								<label for="checkbox-firmizori-11">Am peste 16 ani si sunt de acord cu prelucrarea datelor in conformitate cu politica de confidentialitate si securitate a datelor cu caracter personal implementata de DEDEMAN</label>
+							</div>
+						</div>
+	
+						<div class="support__form-wrap">
+							<div class="support__form">
+								<div class="support__form-title">Scopul propunerii</div>
+								<div class="support__firmizori-checkbox-row">
+									<div class="support__firmizori-checkbox-col">
+	
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-1" type="checkbox">
+											<label for="checkbox-firmizori-1">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-2" type="checkbox">
+											<label for="checkbox-firmizori-2">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-3" type="checkbox">
+											<label for="checkbox-firmizori-3">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-4" type="checkbox">
+											<label for="checkbox-firmizori-4">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-5" type="checkbox">
+											<label for="checkbox-firmizori-5">Vanzare marfa prin magazin</label>
+										</div>
+									</div>
+	
+									<div class="support__firmizori-checkbox-col">
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-6" type="checkbox">
+											<label for="checkbox-firmizori-6">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-7" type="checkbox">
+											<label for="checkbox-firmizori-7">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-8" type="checkbox">
+											<label for="checkbox-firmizori-8">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-9" type="checkbox">
+											<label for="checkbox-firmizori-9">Vanzare marfa prin magazin</label>
+										</div>
+										<div class="form__checkbox-item">
+											<input id="checkbox-firmizori-10" type="checkbox">
+											<label for="checkbox-firmizori-10">Vanzare marfa prin magazin</label>
+										</div>
+									</div>
+	
+								</div>
+								<div class="support__firmizori-textarea">
+									<div class="form__item-title">Message</div>
+									<textarea></textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="support__firmizori-form-btn">
+							<input type="submit" value="Trimite" class="button">
+						</div>
+					</form>
 
 				</div>
 			</div>
@@ -519,6 +643,7 @@
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

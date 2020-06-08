@@ -1,0 +1,80 @@
+.registration
+  max-width: 1366px
+  margin: 0 auto
+  
+.registration__row
+  display: flex
+
+.registration__left
+  width: 790px
+  padding: 35px 125px 20px
+  +media-lg 
+    margin: 0 auto
+  +media-sm 
+    width: 100%
+    padding: 25px 15px
+    max-width: 430px
+
+.registration__right
+  width: 570px
+  +media-lg 
+    display: none
+
+.registration__img
+  img 
+    width: 100%
+
+.registration__title
+  font-size: 35px
+  margin-bottom: 10px
+  +media-sm 
+    font-size: 30px
+
+.registration__subtitle
+  font-size: 14px
+  font-weight: 600
+  margin-bottom: 30px
+  .mark 
+    color: $color-main
+
+.registration__form-radio-row
+  display: flex
+  margin-bottom: 30px
+  .form__radio-item
+    margin-right: 70px
+  .form__radio-item:last-child
+    margin-right: 0px
+  +media-sm 
+    .form__radio-item
+      margin-right: 20px
+
+
+.registration__form-row
+  display: flex
+  flex-wrap: wrap
+  margin: -12px
+  margin-bottom: 10px
+  +media-sm 
+    margin: -7px
+    margin-bottom: 10px
+
+.registration__form-item
+  display: block
+  width: 50%
+  padding: 12px
+  +media-sm 
+    width: 100%
+    padding: 7px
+
+.registration__form-checkbox
+  margin-bottom: 35px
+  .form__checkbox-item
+    margin-bottom: 15px
+  .mark 
+    color: #262F56
+
+.registration__form-btn
+  width: 200px
+  margin-left: auto
+  +media-sm 
+    margin-right: auto

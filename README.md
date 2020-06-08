@@ -17,7 +17,13 @@ Pages
 - https://sergey-shovkoplyas.github.io/zikkurat/app/standart-1.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/support-contacte.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/support-furmizori.html
-
+- 
+- https://sergey-shovkoplyas.github.io/zikkurat/app/registration.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/payment-order.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/payment-order-fiz.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/payment-delivery.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/payment-type.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/payment-final.html
 
 Start template with (optional)
 - normalize.css

@@ -13,17 +13,25 @@ textarea,
   &::placeholder 
     color: #B0B0B0
 
+.jq-selectbox__select
+  padding: 10px 15px
+
+textarea::placeholder
+    color: #D7D7D7
+
 .form__checkbox-item
   input[type='checkbox']
     display: none
   label 
     position: relative
     display: inline-block 
-    font-size: 14px
+    font-size: 12px
     padding-left: 30px
     cursor: pointer
+    color: #B0B0B0
   label::before 
     content: '\e920'
+    font-size: 14px
     font-family: 'icomoon' !important
     color: rgba(0, 0, 0, 0.1)
     position: absolute
@@ -32,6 +40,46 @@ textarea,
   input[type='checkbox']:checked + label::before 
     content: '\e921'
     color: #262F56
+  &:hover 
+    label
+      color: $color-dark
+    label::before
+      color: rgba(0, 0, 0, 0.2)
+
+.form__radio-item
+  position: relative
+  input[type='radio']
+    display: none
+  label 
+    position: relative
+    z-index: 1
+    display: inline-block 
+    font-size: 14px
+    padding-left: 30px
+    cursor: pointer
+  label::before 
+    content: ''
+    position: absolute  
+    top: -1px
+    left: 0
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    border: 1px solid rgba(0, 0, 0, 0.1)
+  input[type='radio']:checked + label::after 
+    content: ''
+    position: absolute  
+    top: 4px
+    left: 5px
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: $color-main
+  &:hover 
+    label
+      color: $color-dark
+    label::before
+      border: 1px solid rgba(0, 0, 0, 0.2)
 
 .form__item-title
   font-size: 12px

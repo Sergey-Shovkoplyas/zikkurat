@@ -24,6 +24,9 @@ Pages
 - https://sergey-shovkoplyas.github.io/zikkurat/app/payment-delivery.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/payment-type.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/payment-final.html
+- 
+- https://sergey-shovkoplyas.github.io/zikkurat/app/cart.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/category.html
 
 Start template with (optional)
 - normalize.css

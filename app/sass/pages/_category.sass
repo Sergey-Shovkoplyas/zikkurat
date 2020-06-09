@@ -1,0 +1,131 @@
+.category__title
+  font-size: 25px
+  margin: 20px 0px
+  span 
+    font-size: 14px
+    color: #B0B0B0
+
+.category__filter-btn
+  display: none
+  text-transform: uppercase
+  margin-bottom: 20px
+  cursor: pointer
+  i 
+    display: inline-block
+    transition: .2s
+  &.active 
+    i 
+      transform: rotate(180deg)
+  +media-md 
+    display: block
+
+.category__row
+  position: relative
+  display: flex
+  justify-content: space-between
+
+.category__left
+  // outline: 1px solid green
+  width: 290px 
+  margin-top: 85px
+  +media-lg 
+    width: 200px
+    padding-right: 15px
+  +media-md 
+    display: none
+    width: 240px
+    position: absolute
+    z-index: 20
+    top: 0
+    left: 0
+    margin-top: 0
+    padding: 15px
+    background-color: #fff
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 4px
+
+.category__name
+  color: $color-dark
+  font-weight: 600
+  margin-bottom: 16px
+
+.category__list
+  padding: 0 
+  margin: 0
+  list-style: none
+  margin-bottom: 20px
+  .form__checkbox-item label 
+    font-size: 14px
+    color: $color-light
+    padding-left: 25px
+
+.category__list-more
+  font-size: 12px
+  text-transform: uppercase 
+  color: $color-dark
+  font-weight: 600
+  // margin-top: -5px
+  cursor: pointer
+  margin-bottom: 20px
+
+.category__list-sublist
+  display: none
+
+
+
+
+
+
+
+// --------------- category__right ---------------------
+
+.category__right
+  // outline: 1px solid green
+  width: 740px 
+  margin-bottom: 130px
+  margin-top: -50px
+  +media-lg 
+    margin-top: 0
+  +media-sm 
+    margin-bottom: 50px
+
+.category__products-row
+  display: flex
+  flex-wrap: wrap
+
+
+.category__products-item
+  width: 25%
+  margin-bottom: 30px
+  +media-sm 
+    width: 100%
+    margin-bottom: 0
+    .card 
+      height: 360px
+      width: 290px
+      margin: 0 auto
+    .card__title
+      height: 45px
+
+
+.category__products-filter
+  display: flex
+  justify-content: space-between
+  padding: 20px
+  background: #FAFAFA
+  border-radius: 4px
+  margin-bottom: 20px
+  +media-sm 
+    margin-left: -15px 
+    margin-right: -15px
+
+.category__products-filter-item
+  width: 200px
+  &.goods 
+    width: 150px
+  
+  +media-sm 
+    width: 145px
+    &.goods
+      width: 130px
+

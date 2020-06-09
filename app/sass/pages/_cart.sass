@@ -1,0 +1,193 @@
+.cart__title
+  font-size: 25px
+  margin: 20px 0px
+
+.cart__row
+  display: flex
+  justify-content: space-between
+  margin-bottom: 130px
+  +media-md 
+    flex-direction: column
+    margin-bottom: 70px
+  +media-sm 
+    align-items: center
+    margin-bottom: 50px
+
+.cart__left
+  width: 825px
+  margin-right: 30px
+  +media-lg 
+    width: 690px
+  +media-md 
+    margin-bottom: 30px
+  +media-sm 
+    width: 100%
+    max-width: 345px
+    margin-right: 0
+
+.cart__right
+  width: 255px
+
+.cart__titles
+  padding: 14px 20px
+  display: flex
+  justify-content: space-between
+  background-color: #FAFAFA
+  border-radius: 4px
+  +media-sm 
+    margin-left: -15px 
+    margin-right: -15px
+
+.cart__titles-name 
+  font-size: 12px
+  &:nth-child(1)
+    width: 140px
+    // background: red
+
+.cart__titles-left 
+  // outline: 1px solid green
+
+  width: 325px 
+  display: flex 
+  flex-shrink: 0
+  +media-lg 
+    width: 280px
+
+.cart__titles-right
+  // outline: 1px solid green
+  width: 485px  
+  display: flex
+  justify-content: space-between
+  padding-right: 90px
+  +media-lg 
+    padding-right: 55px
+  +media-sm 
+    display: none
+
+
+// ------------ cart__item ---------------
+
+.cart__item-mobile-titles
+  display: none
+  font-size: 12px
+  padding-right: 50px
+  margin-bottom: 10px
+  +media-sm 
+    display: flex 
+    justify-content: space-between
+  span:nth-child(1)
+    width: 100px
+  +media-374 
+    padding-right: 40px
+
+
+.cart__item
+  display: flex
+  justify-content: space-between
+  padding: 20px 0px 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  &:last-child 
+    border-bottom: none
+  +media-sm 
+    flex-direction: column
+
+.cart__item-left
+  width: 325px 
+  display: flex 
+  flex-shrink: 0
+  margin-right: 15px
+  +media-lg
+    width: 280px
+  +media-sm 
+    width: 100%
+    margin-right: 0
+    margin-bottom: 15px
+
+.cart__item-img
+  flex-shrink: 0
+  margin-right: 30px
+  width: 65px
+  height: 80px
+  overflow: hidden
+  img 
+    width: 100%
+  a 
+    display: block
+  +media-lg 
+    margin-right: 15px
+
+.cart__item-mame
+  a
+    display: block
+    font-size: 14px
+    font-weight: 600
+    color: $color-dark
+    margin: 10px 0px
+  span 
+    font-size: 11px
+
+
+.cart__item-right
+  width: 485px  
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-right: 30px
+  font-size: 14px
+  +media-lg
+    padding-right: 15px
+  +media-sm 
+    padding-right: 0px
+    width: 100%
+
+.cart__item-subtotal,
+.cart__item-total
+  font-weight: 600
+
+.cart__item-remove
+  cursor: pointer
+
+
+// ------------------ cart__right ---------------------
+
+.cart__total
+  background: #FAFAFA
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  margin-bottom: 20px
+
+.cart__total-item
+  display: flex 
+  justify-content: space-between
+  padding: 20px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  font-size: 14px
+  &.clear
+    border-bottom: none
+
+.cart__total-item-value
+  font-weight: 600
+  .mark
+    color: $color-main
+
+.cart__total-btn
+  padding: 0px 20px 20px
+
+.cart__questions
+  color: $color-dark
+  margin-bottom: 20px
+
+.cart__contact-item
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  padding-bottom: 10px
+  margin-bottom: 10px
+  &:last-child 
+    border-bottom: none
+
+.cart__contact-title
+  font-size: 11px 
+  line-height: 28px
+  color: #B0B0B0
+
+.cart__contact-phone
+  color: $color-dark

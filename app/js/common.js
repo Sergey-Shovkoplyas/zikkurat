@@ -169,17 +169,55 @@ $(document).ready(function () {
 			$('.category__left').slideToggle();
 		});
 
+	// ------------------- .category-main__filter-btn ------------------
+		
+	$('.category-main__filter-btn').on('click', function(){
+		$(this).toggleClass('active');
+		$('.category-main__left').slideToggle();
+	});
+
+
+	// ---------------------- product__info-tab -------------------------
+
+	$('.product__info-tab-btn').on('click', function () {
+		$(this).addClass('active');
+		$('.product__info-tab-btn').not($(this)).removeClass('active');
+		let num = +$(this).attr('data-num') - 1;
+		let text = $('.product__info-tab-content')[num];
+		$('.product__info-tab-content').not(text).removeClass('active');
+		$(text).addClass('active');
+	});
+
+
+	// Scroll to  --------------------------------------
+
+	$('.home__category-item').on('click', function(){
+		let identify = $(this).attr('data-btn');
+		let $item = $('[data-item=' + identify + ']')
+		let itemOffsetTop = $item.offset().top
+
+		scrollTo(itemOffsetTop);
+
+	});
+
+
+	function scrollTo(offsetTop) {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: offsetTop - 50
+		}, 2000);
+	}
+
 
 
 	// ------------------------------ select customaze  -------------------
 
 	$('select.form__select').styler();
-	$('.jq-selectbox__select').on('click', function () {
-		$(this).toggleClass('active');
-	});
-	$('.jq-selectbox__dropdown').on('click', function () {
-		$(this).prev('.jq-selectbox__select').toggleClass('active');
-	});
+	// $('.jq-selectbox__select').on('click', function () {
+	// 	$(this).toggleClass('active');
+	// });
+	// $('.jq-selectbox__dropdown').on('click', function () {
+	// 	$(this).prev('.jq-selectbox__select').toggleClass('active');
+	// });
 
 
 });

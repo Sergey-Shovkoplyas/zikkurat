@@ -16,7 +16,7 @@
   &.active 
     i 
       transform: rotate(180deg)
-  +media-md 
+  +media-sm
     display: block
 
 .category__row
@@ -27,11 +27,12 @@
 .category__left
   // outline: 1px solid green
   width: 290px 
+  flex-shrink: 0
   margin-top: 85px
   +media-lg 
     width: 200px
     padding-right: 15px
-  +media-md 
+  +media-sm 
     display: none
     width: 240px
     position: absolute
@@ -97,6 +98,8 @@
 .category__products-item
   width: 25%
   margin-bottom: 30px
+  +media-md 
+    width: 33.33%
   +media-sm 
     width: 100%
     margin-bottom: 0
@@ -106,6 +109,9 @@
       margin: 0 auto
     .card__title
       height: 45px
+      margin-bottom: 10px
+    .card__img
+      margin-bottom: 0
 
 
 .category__products-filter

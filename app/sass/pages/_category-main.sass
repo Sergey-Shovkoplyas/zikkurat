@@ -1,0 +1,125 @@
+.category-main
+  background-color: #FAFAFA
+  padding-bottom: 100px
+  +media-sm 
+    padding-bottom: 40px
+  
+.category-main__top
+  max-width: 1920px 
+  padding: 130px 0px 190px
+  margin: 0 auto 
+  background: url('../img/category-main-bg.jpg') no-repeat center
+  background-size: cover
+  +media-sm 
+    padding: 50px 0px
+
+.category-main__title
+  text-align: center 
+  font-size: 45px 
+  line-height: 60px 
+  color: #fff
+  +media-sm 
+    font-size: 40px
+
+.category-main__content
+  // outline: 1px solid green
+  max-width: 1185px
+  margin: 0 auto
+  margin-top: -42px
+  padding: 34px 0px
+  border-radius: 4px 
+  background-color: #fff
+  +media-sm 
+    margin-top: 0
+    padding: 20px 0px
+    padding-bottom: 0
+
+.category-main__subtitle
+  font-size: 25px 
+  margin-bottom: 20px
+  span 
+    font-size: 14px
+    color: #B0B0B0
+
+.category-main__filter-btn
+  display: none
+  text-transform: uppercase
+  margin-bottom: 20px
+  cursor: pointer
+  i 
+    display: inline-block
+    transition: .2s
+  &.active 
+    i 
+      transform: rotate(180deg)
+  +media-sm
+    display: block
+
+.category-main__row 
+  position: relative
+  display: flex
+  justify-content: space-between
+
+.category-main__left
+  width: 180px
+  flex-shrink: 0
+  margin-right: 20px
+  +media-sm 
+    display: none
+    position: absolute 
+    top: 0
+    left: 0
+    width: 200px
+    padding: 10px
+    background: #fff
+    border: 1px solid #B0B0B0
+    border-radius: 4px
+
+.category-main__right
+  width: 920px
+
+.category-main__list
+  padding: 0
+  margin: 0 
+  list-style: none 
+  li 
+    margin-bottom: 10px
+  a 
+    font-size: 14px
+  a:hover 
+    text-decoration: underline
+  span 
+    white-space: nowrap
+
+.category-main__products-row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -20px
+
+.category-main__products-item
+  // outline: 1px solid red
+  width: 25%
+  padding: 0 20px
+  margin-bottom: 30px
+  +media-md 
+    width: 33.33%
+  +media-sm
+    width: 50%
+
+.category-main__products-img
+  margin-bottom: 10px 
+  a 
+    display: block
+  img 
+    width: 100%
+    transition: .2s
+  &:hover 
+    img 
+      transform: scale(1.03)
+
+.category-main__products-name 
+  text-align: center
+  a 
+    font-size: 14px
+  a:hover 
+    text-decoration: underline

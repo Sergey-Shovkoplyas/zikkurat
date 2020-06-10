@@ -264,6 +264,45 @@
     margin-bottom: 50px
 
 
+// --------------------- home__tab ---------------------------
+
+.home__tab
+  border-bottom: 1px solid #E4E4E4
+  display: flex
+  margin-bottom: 50px
+  +media-sm 
+    flex-direction: column
+    align-items: center
+    margin-bottom: 20px
+    border-bottom: none
+
+.home__tab-btn
+  width: 20%
+  text-align: center
+  font-size: 14px
+  font-weight: 600
+  padding-bottom: 13px 
+  margin-bottom: -1px
+  cursor: pointer
+  &:hover 
+    color: $color-main
+  &.active 
+    color: $color-main
+    border-bottom: 1px solid $color-main
+  +media-sm 
+    width: 100%
+    padding-bottom: 5px
+    margin-bottom: 10px
+    text-align: center
+    border-bottom: 1px solid #E4E4E4
+
+.home__tab-content
+  display: none
+  margin-bottom: 30px
+  &.active 
+    display: block
+
+
 // _____________________________ MOBILE ONLY!!!!!!!!!!! _____________________________
 
 .home__mobile-list 

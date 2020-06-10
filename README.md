@@ -29,6 +29,7 @@ Pages
 - https://sergey-shovkoplyas.github.io/zikkurat/app/category.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/category-main
 - https://sergey-shovkoplyas.github.io/zikkurat/app/productg
+- https://sergey-shovkoplyas.github.io/zikkurat/app/newslatter-mobile
 
 Start template with (optional)
 - normalize.css

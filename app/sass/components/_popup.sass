@@ -1,0 +1,199 @@
+.pupup-cart
+  position: fixed
+  z-index: 500
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+
+.pupup-cart__owerlay
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.4)
+  cursor: pointer
+ 
+.pupup-cart__content
+  width: 445px
+  position: absolute
+  z-index: 300
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  padding: 30px 50px 50px
+  background: #FFFFFF
+  box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.15)
+  border-radius: 4px
+  +media-sm 
+    width: 290px
+    padding: 15px
+
+    
+.pupup-cart__close
+  position: absolute
+  top: 10px 
+  right: 10px
+  font-size: 12px
+  padding: 5px 
+  cursor: pointer
+
+.pupup-cart__title
+  font-size: 25px 
+  color: $color-dark
+  text-align: center
+  margin-bottom: 10px
+  +media-sm 
+    font-size: 20px
+
+.pupup-cart__subtitle
+  font-size: 14px
+  font-weight: 600
+  text-align: center
+  margin-bottom: 20px
+  .mark 
+    color: $color-main
+
+.pupup-cart__form-item
+  display: block
+  margin-bottom: 15px
+
+.pupup-cart__form-submit
+  margin-top: 30px
+  margin-bottom: 10px
+
+.pupup-cart__form-checkbox-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 35px
+
+.form__checkbox-item
+  label
+    padding-left: 25px
+
+.pupup-cart__form-checkbox-text
+  font-size: 12px
+
+
+
+// ---------------- .pupup-category ---------------------
+
+
+.pupup-category
+  position: fixed
+  z-index: 500
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+
+.pupup-category__owerlay
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.4)
+  cursor: pointer
+
+.pupup-category__content
+  width: 540px
+  position: absolute
+  z-index: 300
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background: #FFFFFF
+  box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.15)
+  border-radius: 4px
+  overflow: hidden
+  +media-sm 
+    width: 290px
+
+    
+.pupup-category__close
+  position: absolute
+  top: 10px 
+  right: 10px
+  font-size: 12px
+  padding: 5px 
+  cursor: pointer
+
+.pupup-category__title
+  font-size: 25px 
+  columns: $color-dark
+  padding: 30px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  +media-sm 
+    font-size: 20px
+    padding: 15px
+    padding-right: 40px
+
+.pupup-category__product
+  display: flex
+  padding: 30px
+  justify-content: space-between
+  align-items: center
+  +media-sm 
+    padding: 15px
+
+.pupup-category__product-img
+  width: 80px
+  height: 100px
+  flex-shrink: 0 
+  margin-right: 30px
+  img 
+    width: 100%
+
+.pupup-category__product-description
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +media-sm 
+    flex-direction: column
+    align-items: flex-start
+
+.pupup-category__product-text
+  width: 200px
+  +media-sm 
+    width: 100%
+    margin-bottom: 15px
+ 
+.pupup-category__product-name
+  font-size: 14px
+  font-weight: 600
+  color: $color-dark
+  margin-bottom: 10px
+
+.pupup-category__product-info
+  font-size: 11px
+
+.pupup-category__product-current
+  font-weight: 600
+  font-size: 14px
+  color: $color-main
+  margin-bottom: 5px
+
+.pupup-category__product-old
+  font-size: 12px 
+  text-decoration: line-through
+
+.pupup-category__bottom
+  padding: 30px
+  background-color: #FAFAFA
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +media-sm 
+    padding: 15px
+
+.pupup-category__continue
+  font-size: 14px
+  font-weight: 600
+  color: $color-main
+
+.pupup-category__btn
+  width: 180px

@@ -212,6 +212,17 @@ $(document).ready(function () {
 		$(this).next('.mobile-list__sublist').slideToggle();
 	});
 
+	// ---------------------- popup toggle --------------------
+
+	$('.pupup-cart__close, .pupup-cart__owerlay').on('click', function(){
+		$('.pupup-cart').fadeOut();
+	});
+
+	$('.pupup-category__close, .pupup-category__owerlay').on('click', function(){
+		$('.pupup-category').fadeOut();
+	});
+
+
 
 
 	// ------------------------------ select customaze  -------------------

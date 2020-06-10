@@ -15,6 +15,7 @@ function styles () {
 	.pipe(sourceMaps.init())
 	.pipe(sass().on('error', notify.onError()))
 	.pipe(rename({ suffix: '.min'}))
+	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(sourceMaps.write())
 	.pipe(dest('app/css'))
 	.pipe(browserSync.stream());

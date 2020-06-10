@@ -27,13 +27,12 @@ Pages
 - 
 - https://sergey-shovkoplyas.github.io/zikkurat/app/cart.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/category.html
-- https://sergey-shovkoplyas.github.io/zikkurat/app/category-main
-- https://sergey-shovkoplyas.github.io/zikkurat/app/productg
-- https://sergey-shovkoplyas.github.io/zikkurat/app/newslatter-mobile
+- https://sergey-shovkoplyas.github.io/zikkurat/app/category-main.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/product.html
+- https://sergey-shovkoplyas.github.io/zikkurat/app/newslatter-mobile.html
 
-Start template with (optional)
+Start template with
 - normalize.css
-- bootstrap-grid.min.css
 - jquery-3.4.1.min.js
 
 Usage 

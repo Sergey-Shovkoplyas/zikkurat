@@ -187,9 +187,9 @@ $(document).ready(function () {
 		$('.product__info-tab-content').not(text).removeClass('active');
 		$(text).addClass('active');
 	});
+	
 
-
-	// Scroll to  --------------------------------------
+	// ----------------- Scroll to home__category-item  ---------------------
 
 	$('.home__category-item').on('click', function(){
 		let identify = $(this).attr('data-btn');
@@ -200,12 +200,17 @@ $(document).ready(function () {
 
 	});
 
-
 	function scrollTo(offsetTop) {
 		$([document.documentElement, document.body]).animate({
 			scrollTop: offsetTop - 50
 		}, 2000);
 	}
+
+	// ---------------------- mobile-list open sublist --------------------
+
+	$('.mobile-list__link').on('click', function(){
+		$(this).next('.mobile-list__sublist').slideToggle();
+	});
 
 
 

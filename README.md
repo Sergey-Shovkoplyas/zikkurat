@@ -28,7 +28,7 @@ Pages
 - https://sergey-shovkoplyas.github.io/zikkurat/app/cart.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/category.html
 - https://sergey-shovkoplyas.github.io/zikkurat/app/category-main
-- https://sergey-shovkoplyas.github.io/zikkurat/app/product
+- https://sergey-shovkoplyas.github.io/zikkurat/app/productg
 
 Start template with (optional)
 - normalize.css

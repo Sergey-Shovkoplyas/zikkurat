@@ -1,0 +1,159 @@
+.mobile-list
+  margin: 0
+  padding: 0
+  list-style: none
+  li 
+    margin-bottom: 15px
+
+
+.mobile-list__link
+  position: relative
+  display: block
+  vertical-align: middle
+  padding: 9px
+  padding-left: 17px
+  font-size: 14px 
+  color: $color-dark 
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07)
+  border-radius: 4px
+  overflow: hidden
+  &::before 
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 4px 
+    background-color: $color-main
+  &::after 
+    content: '\e918'
+    font-family: 'icomoon'
+    position: absolute
+    top: 15px
+    right: 20px
+
+
+.mobile-list__icon-first
+  display: inline-block
+  vertical-align: middle
+  margin-right: 10px
+  font-size: 20px
+  color: $color-main
+
+
+
+// --------- .mobile-list__sublist
+
+.mobile-list__sublist
+  display: none
+  position: relative
+  margin: 0
+  padding: 0
+  list-style: none
+  margin-top: -1px
+  background: #fff
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-bottom-right-radius: 4px
+  border-bottom-left-radius: 4px
+  li 
+    margin-bottom: 0
+
+.mobile-list__sublist-link
+  position: relative
+  display: block
+  padding: 14px
+  padding-right: 25px
+  font-size: 14px
+  &::after 
+    position: absolute
+    content: '\e914'
+    font-family: 'icomoon'
+    top: 16px
+    right: 17px
+
+.mobile-list__sublist-icon-first
+  margin-right: 8px
+  font-size: 16px
+
+
+//  ---------------------NEW PAGE mobile-list__stock --------------
+
+
+.mobile-list--stock
+  .mobile-list__link
+    padding: 13px
+    padding-left: 47px
+    &::after 
+      content: '\e914'
+      left: 20px
+      right: auto
+      top: 12px
+      transform: rotate(180deg)
+  .mobile-list__sublist
+    display: block
+
+.mobile-list__stock
+  display: flex
+  padding: 15px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  +media-374 
+    padding: 10px
+
+
+.mobile-list__stock-img
+  width: 100px 
+  height: 100px 
+  flex-shrink: 0
+  margin-right: 15px
+  img 
+    width: 100%
+  +media-374 
+    margin-right: 10px
+  
+.mobile-list__stock-name
+  font-size: 14px
+  font-weight: 600
+  color: $color-dark
+  margin-bottom: 25px
+
+.mobile-list__stock-price-current
+  margin-right: 8px
+  font-weight: 600
+  font-size: 15px 
+  color: $color-main
+  +media-374 
+    font-size: 14px
+    margin-right: 3px
+
+.mobile-list__stock-price-old
+  font-size: 12px
+  text-decoration: line-through
+  +media-374 
+    font-size: 11px
+
+
+//  ---------------------NEW PAGE mobile-list__newsletter --------------
+
+.newsletter-mobile
+  background-color: #FAFAFA
+
+.newsletter__mobile-list
+  margin: 40px 0px
+  +media-min-768
+    display: none
+
+.mobile-list__newsletter-img
+  margin: 30px 0px 50px
+  img 
+    width: 100%
+
+.mobile-list__newsletter-form
+  padding: 0 15px
+  padding-bottom: 15px
+  label 
+    display: block
+    margin-bottom: 25px
+
+    

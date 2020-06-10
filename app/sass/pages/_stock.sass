@@ -1,3 +1,11 @@
+// ------------- hide blocks on mobile !!! ------------------
+
+.stock__only-desctop
+  +media-sm 
+    display: none
+
+// -------------END ------------------
+  
 .stock__title
   text-align: center
   margin: 22px 0px 32px
@@ -203,5 +211,6 @@
 .stock__mobile-list 
   margin: 16px 0px
   margin-bottom: 30px
+  margin-top: 40px
   +media-min-768
     display: none

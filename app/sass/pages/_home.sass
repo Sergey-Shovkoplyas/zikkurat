@@ -11,6 +11,12 @@
   +media-sm 
     margin-bottom: 30px
 
+// ------------- hide blocks on mobile !!! ------------------
+
+.home__only-desctop
+  +media-sm 
+    display: none
+
 // ------------- home__head ------------------
   
 .home__head
@@ -307,6 +313,7 @@
 
 .home__mobile-list 
   margin: 16px 0px
+  margin-bottom: 30px
   +media-min-768
     display: none
 

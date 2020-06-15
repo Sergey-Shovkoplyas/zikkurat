@@ -3,7 +3,7 @@ $(document).ready(function () {
 	// ------------------- home__head slider itialize ----------------
 
 	$('.home__head').slick({
-		
+
 	});
 
 	// ------------------- section-slider itialize ----------------
@@ -66,41 +66,47 @@ $(document).ready(function () {
 		]
 	});
 
-
 	// ------------------- TABS section-sliders itialize ----------------
+	// ---------------------- home__tab -------------------------
 
-	$('.home__slider-tab .sec-slider__slider-wrap').each(function () {
-		let prev = $(this).parent('.sec-slider__slider').find('.sec-slider__arrow.prev');
-		let next = $(this).parent('.sec-slider__slider').find('.sec-slider__arrow.next');
-		$(this).slick({
-			variableWidth: true,
-			slidesToShow: 6,
-			slidesToScroll: 6,
-			prevArrow: prev,
-			nextArrow: next,
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToScroll: 5,
-					}
-				},
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToScroll: 4,
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1,
-					}
-				},
-			]
-		});
+	$('.home__tab-btn').on('click', function () {
+		$(this).addClass('active');
+		$('.home__tab-btn').not($(this)).removeClass('active');
+		let num = +$(this).attr('data-num') - 1 ;
+		slider.slick('slickGoTo', num)
 	});
+
+	let slider = $('.home__slider-tab .sec-slider__slider-wrap');
+	let prev = slider.parent('.sec-slider__slider').find('.sec-slider__arrow.prev');
+	let next = slider.parent('.sec-slider__slider').find('.sec-slider__arrow.next');
+	slider.slick({
+		variableWidth: true,
+		slidesToShow: 6,
+		slidesToScroll: 6,
+		prevArrow: prev,
+		nextArrow: next,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToScroll: 6,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToScroll: 6,
+				}
+			}
+		]
+	});
+	slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+		let curSlide = currentSlide + 1;
+		$('.home__tab-btn').removeClass('active');
+		$('[data-num="'+curSlide+'"]').addClass('active');
+	});
+	
 
 	// ----------------------------- header__menu-sublist -----------------
 
@@ -213,16 +219,7 @@ $(document).ready(function () {
 		$(text).addClass('active');
 	});
 
-	// ---------------------- home__tab -------------------------
-
-	$('.home__tab-btn').on('click', function () {
-		$(this).addClass('active');
-		$('.home__tab-btn').not($(this)).removeClass('active');
-		let num = +$(this).attr('data-num') - 1;
-		let text = $('.home__tab-content')[num];
-		$('.home__tab-content').not(text).removeClass('active');
-		$(text).addClass('active');
-	});
+	
 
 
 	// ----------------- Scroll to home__category-item  ---------------------

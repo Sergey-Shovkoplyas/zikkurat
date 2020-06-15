@@ -19,16 +19,19 @@
 
 // ------------- home__head ------------------
   
-.home__head
+.home__head-item
   padding: 105px 0px 95px 
   background: url('../img/home-head-bg.jpg') no-repeat center 
   background-size: cover
+  max-width: 1920px
+  margin: 0 auto
   +media-sm 
     padding: 46px 0px 35px
     background: url('../img/home-mobile-bg.jpg') no-repeat center 
 
 .home__head-wrap
   max-width: 510px
+  padding-left: 20px
   +media-sm 
     max-width: 220px
 
@@ -51,6 +54,56 @@
     width: 100px
     .button 
       padding: 8px 8px
+
+// ------------- home__head slider ---------------
+
+.home__head
+  position: relative
+  .slick-arrow
+    position: absolute
+    z-index: 1
+    top: 50%
+    transform: translate(0, -50%)
+    outline: none
+    border: none
+    font-size: 0
+    background-color: transparent
+    cursor: pointer
+    width: 60px
+    height: 60px
+    display: flex
+    align-items: center 
+    justify-content: center
+    // border: 1px solid $color-main
+    border-radius: 50%
+    background-color: rgba(250, 250, 250, .5)
+    &::before
+      position: absolute
+      content: '\e914'
+      font-family: "icomoon"
+      font-size: 40px
+      color: $color-main
+    &:hover 
+      background-color: rgba(250, 250, 250, .7)
+  .slick-prev
+    left: 5px
+    &::before
+      transform: rotate(180deg)
+  .slick-next
+    right: 5px
+  +media-sm 
+    .slick-arrow
+      width: 30px
+      height: 30px
+      background-color: transparent !important
+    .slick-arrow::before
+      font-size: 25px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+    
 
 // ------------- home__category ------------------
 
@@ -175,6 +228,8 @@
     padding-bottom: 30px
 
 .home__decor-col
+  position: relative
+  display: block
   margin-right: 30px
   height: 400px
   &:last-child 
@@ -224,6 +279,13 @@
   width: 210px
   +media-sm 
     width: 180px
+
+.home__decor-link
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
 
 // ------------- home__banner ------------------
 

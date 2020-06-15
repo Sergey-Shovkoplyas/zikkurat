@@ -22,7 +22,7 @@
 
 .header__logo
   display: block
-  padding: 40px 30px 25px
+  padding: 39px 30px 15px
   img 
     width: 100%
 
@@ -37,7 +37,7 @@
   justify-content: space-between
   align-items: center
   margin: 10px 0
-  margin-bottom: 20px
+  margin-bottom: 15px
   +media-md 
     margin-bottom: 10px
 
@@ -227,10 +227,35 @@
   align-items: center 
 
 .header__alege
+  position: relative
+
+.header__alege-btn
   font-weight: 600
   margin-right: 22px
+  cursor: pointer
   &:hover 
     text-decoration: underline
+
+.header__alege-sublist
+  display: none
+  position: absolute
+  z-index: 1
+  width: 100%
+  top: 100%
+  left: 0
+  padding: 5px
+  margin: 0
+  margin-top: 7px
+  padding-left: 25px
+  list-style: none
+  background-color: #FAFAFA
+  border-radius: 4px
+  color: $color-light
+  li 
+    margin-bottom: 3px
+  a:hover 
+    text-decoration: underline
+    color: $color-dark
 
 .header__language
   .active 

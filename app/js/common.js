@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+	// ------------------- home__head slider itialize ----------------
+
+	$('.home__head').slick({
+		
+	});
+
 	// ------------------- section-slider itialize ----------------
 
 	$('.home__slider-1 .sec-slider__slider-wrap').slick({
@@ -102,6 +108,12 @@ $(document).ready(function () {
 		$(this).next('.header__menu-sublist').slideToggle();
 	});
 
+	// ----------------------------- header__alage-sublist -----------------
+
+	$('.header__alege-btn').on('click', function () {
+		$(this).next('.header__alege-sublist').slideToggle();
+	});
+
 	// ----------------------------- header__submenu toggle -----------------
 
 	$('.header__submenu-btn').on('click', function () {
@@ -165,6 +177,12 @@ $(document).ready(function () {
 
 	$('.category__list-more').on('click', function () {
 		$(this).prev('.category__list').find('.category__list-sublist').slideToggle();
+		$(this).toggleClass('active');
+		if ( $(this).is('.active') ) {
+			$(this).html('MAI PUTINE -');
+		} else {
+			$(this).html('MAI MULTE +');
+		}
 	});
 
 
@@ -232,11 +250,11 @@ $(document).ready(function () {
 
 	// ---------------------- popup toggle --------------------
 
-	$('.pupup-cart__close, .pupup-cart__owerlay').on('click', function () {
+	$('.pupup-cart__close, .pupup-cart__owerlay, .pupup-cart__btn-close').on('click', function () {
 		$('.pupup-cart').fadeOut();
 	});
 
-	$('.pupup-category__close, .pupup-category__owerlay').on('click', function () {
+	$('.pupup-category__close, .pupup-category__owerlay, .pupup-category__continue').on('click', function () {
 		$('.pupup-category').fadeOut();
 	});
 

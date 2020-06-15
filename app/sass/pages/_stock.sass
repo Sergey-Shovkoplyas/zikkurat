@@ -143,6 +143,7 @@
   border-radius: 4px
 
 .stock__card-img
+  position: relative
   margin-bottom: 20px
   overflow: hidden
   a 
@@ -158,6 +159,17 @@
       width: 70%
     a 
       text-align: center
+
+.stock__card-number
+  position: absolute
+  z-index: 1
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  font-size: 60px
+  font-weight: 600
+  color: #000
+
 
 .stock__card-content
   padding: 0 30px

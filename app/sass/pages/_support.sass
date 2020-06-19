@@ -52,6 +52,14 @@
   +media-md 
     margin-right: 30px
 
+.support__offers
+  margin-top: 30px
+  +media-md 
+    display: none
+
+.support__offers-title
+  font-size: 25px
+  margin-bottom: 20px
 
 // ------------------ forms --------------------------
 
@@ -109,17 +117,31 @@
 
 .support__contacte-left
   width: 340px
+  flex-shrink: 0
   margin-right: 25px
+  +media-lg 
+    width: 310px
   +media-sm
     width: 100% 
     margin-right: 0
     margin-bottom: 25px
 
 .support__contacte-right
-  align-self: flex-end
-  width: 200px
-  +media-sm 
-    margin: 0 auto
+  width: 100%
+  padding-top: 50px
+  +media-lg 
+    padding-top: 40px
+  +media-sm
+    padding-top: 0px
+
+.support__contacte-agree
+  margin-bottom: 55px
+  +media-lg 
+    margin-bottom: 35px
+
+.support__contacte-btn
+  width: 100%
+
 
 // ------------------- support__furmizori ------------------------
 

@@ -11,8 +11,6 @@
   +media-sm 
     flex-direction: column
 
- 
-
 .payment__total-item
   display: flex
   width: 445px
@@ -37,6 +35,35 @@
 .payment__total-value
   font-weight: 600 
   color: $color-dark
+
+.payment__total--new
+  border-top: 2px solid $color-main
+  justify-content: space-between
+  padding-top: 30px
+  .payment__total-item
+    border: none
+    padding: 10px
+  .payment__total-item--total
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 20px 10px
+  .payment__total-item--total .payment__total-name
+    font-size: 18px
+    font-weight: 700
+  .payment__total-item--total .payment__total-value
+    font-size: 18px
+    font-weight: 700
+  .payment__total-btn
+    align-self: flex-start
+    margin-right: 30px
+  .payment__total-del
+    margin-top: 0
+    margin-left: 10px
+    margin-bottom: 30px
+  +media-md 
+    .payment__total-btn
+      margin-right: 0
+      margin: 0 auto
+  
 
 //  --------------- PAGE payment-type ----------------
 
@@ -236,6 +263,8 @@
   background: #FAFAFA
   border-radius: 4px
   margin-bottom: 57px
+  margin-left: auto
+  margin-right: auto
   +media-sm 
     margin-left: -15px
     margin-right: -15px
@@ -351,6 +380,7 @@
 .payment-order__content
   padding: 50px 0px
   max-width: 730px
+  margin: 0 auto
 
 .payment-order__form-top
   margin-bottom: 35px

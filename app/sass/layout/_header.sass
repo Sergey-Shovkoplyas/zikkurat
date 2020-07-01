@@ -134,7 +134,7 @@
   justify-content: center
   align-items: center
   position: absolute
-  left: 7px
+  left: 4px
   bottom: -7px
   width: 17px
   height: 17px
@@ -317,23 +317,26 @@
     display: flex
 
 .header__submenu-content-left
+  outline: 1px solid green
   width: 100%
-  padding: 30px 60px
-  padding-right: 170px
+  padding: 30px
   border-right: 1px solid #D0D0D0
-  +media-lg 
-    padding: 30px
   +media-md
     padding: 20px
 
 .header__submenu-category-row
   display: flex
-  justify-content: space-between
-  margin-bottom: 10px
+  flex-direction: column
+  max-height: 600px
+  flex-wrap: wrap
+  +media-md 
+    max-height: 700px
 
 
 .header__submenu-category
-  width: 160px
+  width: 200px
+  margin-bottom: 10px
+  // outline: 1px solid red
   +media-md 
     width: 150px
 

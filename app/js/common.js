@@ -241,7 +241,7 @@ $(document).ready(function () {
 
 	// ---------------------- mobile-list open sublist --------------------
 
-	$('.mobile-list__link').on('click', function () {
+	$('.mobile-list--main .mobile-list__link').on('click', function () {
 		$(this).next('.mobile-list__sublist').slideToggle();
 	});
 

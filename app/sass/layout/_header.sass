@@ -317,20 +317,25 @@
     display: flex
 
 .header__submenu-content-left
-  outline: 1px solid green
   width: 100%
   padding: 30px
   border-right: 1px solid #D0D0D0
+  display: flex
   +media-md
     padding: 20px
 
 .header__submenu-category-row
   display: flex
   flex-direction: column
-  max-height: 600px
   flex-wrap: wrap
-  +media-md 
-    max-height: 700px
+  width: 300px
+  &:first-child 
+    margin-right: 15px
+  +media-lg 
+    width: 200px
+  +media-md
+    width: 155px
+
 
 
 .header__submenu-category

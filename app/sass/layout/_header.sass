@@ -152,7 +152,7 @@
   &:hover 
     color: $color-main
 
-.header__menu-sublist
+/* .header__menu-sublist
   display: none
   position: absolute
   z-index: 20
@@ -170,7 +170,107 @@
     margin-bottom: 3px
   a:hover 
     text-decoration: underline
-    color: $color-dark
+    color: $color-dark */
+
+.header__menu-sublist 
+  display: none
+  position: absolute
+  z-index: 20
+  top: 210%
+  right: -20px
+  padding: 20px
+  background-color: #fff
+  border: 1px solid #E4E4E4
+  border-radius: 5px
+  width: 320px
+  &.cart
+    padding-top: 10px
+  &::before 
+    content: ''
+    position: absolute
+    top: -8px
+    right: 50px
+    width: 15px 
+    height: 15px 
+    background-color: #fff
+    border-top: 1px solid #E4E4E4
+    border-left: 1px solid #E4E4E4
+    transform: rotate(45deg)
+
+.header__menu-sublist-title 
+  font-size: 14px
+  margin-bottom: 20px
+
+.header__menu-sublist-buttons
+  display: flex
+  justify-content: space-between
+  .button
+    width: 130px
+    padding: 11px 10px
+
+.header__product
+  padding: 15px 0px
+  border-bottom: 1px solid #E4E4E4
+
+.header__product-row
+  display: flex
+  justify-content: space-between
+
+.header__product-img
+  display: block
+  width: 80px
+  height: 80px
+  transition: .2s
+  background-repeat: no-repeat
+  background-size: contain
+  &:hover 
+    transform: scale(1.03)
+
+.header__product-content
+  width: 180px
+
+.header__product-name
+  display: block
+  font-size: 12px
+  line-height: 16px 
+  font-weight: 600
+  color: $color-dark
+  margin-bottom: 7px
+  &:hover 
+    text-decoration: underline
+
+.header__product-price
+  font-size: 14px 
+  line-height: 19px 
+  color: $color-main
+  span 
+    font-weight: 700
+
+.header__product-total
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 15px 0px
+
+.header__product-total-text
+  font-size: 14px 
+  color: $color-dark
+  line-height: 19px
+  font-weight: 600
+
+.header__product-total-value
+  font-size: 14px 
+  line-height: 19px 
+  color: $color-main
+  span 
+    font-size: 18px
+    line-height: 25px
+    font-weight: 700
+
+.header__product-btn
+  .button 
+    padding: 10px 30px
+
 
 // -------------------- header__bottom ------------------------
 
@@ -270,7 +370,7 @@
 .header__submenu
   display: none
   width: 1200px
-  min-height: 615px
+  height: 615px
   position: absolute
   z-index: 200
   top: 34px
@@ -313,6 +413,7 @@
   width: 100%
   color: #B0B0B0
   position: relative
+  background-color: #fff
   &.active 
     display: flex
 
@@ -320,25 +421,24 @@
   width: 100%
   padding: 30px
   border-right: 1px solid #D0D0D0
-  display: flex
+  overflow: auto
   +media-md
     padding: 20px
 
 .header__submenu-category-row
-  display: flex
-  flex-direction: column
-  flex-wrap: wrap
-  width: 300px
-  &:first-child 
-    margin-right: 15px
+  column-count: 3
+  column-gap: 1em
   +media-lg 
-    width: 200px
-  +media-md
-    width: 155px
+    column-count: 2
+
+.header__submenu-category-item
+  display: inline-block
+  width: 100%
 
 
 
 .header__submenu-category
+  display: inline-block
   width: 200px
   margin-bottom: 10px
   // outline: 1px solid red
@@ -516,6 +616,25 @@
     color: #5481C3
   i.purple
     color: #8638E9
+
+.header-mob__language
+  position: absolute
+  bottom: 20px 
+  left: 20px
+  padding: 0 
+  margin: 0
+  list-style: none
+  li 
+    display: inline-block
+  a 
+    font-size: 16px 
+    line-height: 35px
+    color: #B0B0B0
+  li.active a 
+    color: #4E4E4E
+    font-weight: 600
+  span 
+    color: #4E4E4E
 
 // -------------------- header-mob__search ---------------------
 

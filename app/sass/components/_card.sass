@@ -2,17 +2,17 @@
   position: relative
   // outline: 1px solid black
   width: 185px
-  height: 390px
+  height: 340px
   line-height: 1.36
   +media-md 
     width: 175px
 
 .card__img
-  width: 185px
-  height: 185px
+  width: 175px
+  height: 165px
   overflow: hidden
   margin: 0 auto
-  margin-bottom: 15px
+  margin-bottom: 10px
   padding: 0 5px
   a 
     display: block
@@ -43,6 +43,7 @@
   font-size: 14px
   font-weight: 600
   color: $color-dark
+  text-align: left
   &:hover 
     text-decoration: underline
 
@@ -51,10 +52,13 @@
   margin-bottom: 15px
 
 .card__price-current
-  font-size: 15px
+  font-size: 14px
   font-weight: 600
   color: $color-main
   margin-right: 7px
+  span 
+    font-size: 18px 
+    font-weight: 700
   +media-md 
     font-size: 14px
     margin-right: 6px
@@ -64,7 +68,7 @@
   text-decoration: line-through
 
 .card__btn
-  padding: 0 15px
+  padding: 0 7px
   padding-bottom: 15px
   .button 
     font-size: 12px

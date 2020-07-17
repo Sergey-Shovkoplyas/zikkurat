@@ -114,6 +114,18 @@ $(document).ready(function () {
 		$(this).next('.header__menu-sublist').slideToggle();
 	});
 
+	/* $('.header__menu').hover(
+		function() {
+			console.log('ON');
+			$(this).find('.header__menu-sublist').slideDown();
+		},
+		function() {
+			console.log('OFF');
+			$(this).find('.header__menu-sublist').slideUp();
+		},
+	); */
+
+
 	// ----------------------------- header__alage-sublist -----------------
 
 	$('.header__alege-btn').on('click', function () {

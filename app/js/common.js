@@ -110,20 +110,20 @@ $(document).ready(function () {
 
 	// ----------------------------- header__menu-sublist -----------------
 
-	$('.header__menu-btn').on('click', function () {
+/* 	$('.header__menu-btn').on('click', function () {
 		$(this).next('.header__menu-sublist').slideToggle();
-	});
+	}); */
 
-	/* $('.header__menu').hover(
+	$('.header__menu').hover(
 		function() {
-			console.log('ON');
-			$(this).find('.header__menu-sublist').slideDown();
+			$(this).find('.header__menu-sublist').clearQueue();
+			$(this).find('.header__menu-sublist').fadeIn("fast");
 		},
 		function() {
-			console.log('OFF');
-			$(this).find('.header__menu-sublist').slideUp();
+			$(this).find('.header__menu-sublist').clearQueue();
+			$(this).find('.header__menu-sublist').fadeOut("fast");
 		},
-	); */
+	);
 
 
 	// ----------------------------- header__alage-sublist -----------------
@@ -134,9 +134,20 @@ $(document).ready(function () {
 
 	// ----------------------------- header__submenu toggle -----------------
 
-	$('.header__submenu-btn').on('click', function () {
+/* 	$('.header__submenu-btn').on('click', function () {
 		$('.header__submenu').toggleClass('active');
 	});
+ */
+
+	$('.header__submenu-btn').hover(
+		function() {
+			$(this).find('.header__submenu').addClass("active");
+		},
+		function() {
+			$(this).find('.header__submenu').removeClass("active");
+		},
+	);
+
 
 	// ----------------------------- header__submenu tabs -----------------
 
